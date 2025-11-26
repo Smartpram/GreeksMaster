@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-07T07:48:51.963507",
+  "checks": {
+    "disk_space": {
+      "status": "GOOD",
+      "free_gb": 310,
+      "total_gb": 474,
+      "usage_percent": 34.68
+    },
+    "log_sizes": {
+      "status": "GOOD",
+      "total_size_mb": 0,
+      "large_files": []
+    },
+    "database": {
+      "status": "WARNING",
+      "message": "Database file not found"
+    },
+    "configuration": {
+      "status": "WARNING",
+      "missing_or_default": [
+        "BREEZE_API_KEY",
+        "BREEZE_SECRET_KEY",
+        "BREEZE_USER_ID",
+        "SECRET_KEY"
+      ]
+    }
+  }
+}

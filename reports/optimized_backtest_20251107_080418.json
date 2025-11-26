@@ -1,0 +1,191 @@
+{
+  "timestamp": "2025-11-07T08:04:18.168252",
+  "strategy": "Optimized Enhanced Buy & Hold",
+  "config": {
+    "min_signal_strength": 0.8,
+    "max_position_size": 0.08,
+    "stop_loss": 0.04,
+    "target": 0.12,
+    "volume_filter": 1.5,
+    "max_positions": 4
+  },
+  "performance": {
+    "initial_capital": 100000,
+    "final_capital": 101079.8884286332,
+    "total_return": 0.010798884286332031,
+    "win_rate": 0.6666666666666666,
+    "profit_factor": 2.013947205779684,
+    "max_drawdown": -0.004365974817537852,
+    "sharpe_ratio": 1.773173264797239,
+    "total_trades": 3
+  },
+  "improvements": {
+    "return_improvement": 0.08389888428633203,
+    "win_rate_improvement": 0.3426666666666666,
+    "profit_factor_improvement": 1.2239472057796839,
+    "drawdown_improvement": 0.09533402518246215
+  },
+  "trades": [
+    {
+      "symbol": "RELIANCE",
+      "action": "sell",
+      "quantity": 3,
+      "price": 1436.3096009997994,
+      "entry_price": 1281.8358834767348,
+      "entry_date": "2023-03-13 00:00:00",
+      "exit_date": "2023-03-21 00:00:00",
+      "pnl": 463.4211525691944,
+      "pnl_pct": 0.12050974661755012,
+      "exit_reason": "target_achieved",
+      "days_held": 8
+    },
+    {
+      "symbol": "RELIANCE",
+      "action": "sell",
+      "quantity": 6,
+      "price": 996.5482710306675,
+      "entry_price": 1069.8062907996318,
+      "entry_date": "2023-08-14 00:00:00",
+      "exit_date": "2023-08-17 00:00:00",
+      "pnl": -439.54811861378585,
+      "pnl_pct": -0.06847783603348158,
+      "exit_reason": "stop_loss",
+      "days_held": 3
+    },
+    {
+      "symbol": "INFY",
+      "action": "sell",
+      "quantity": 2,
+      "price": 1868.5489647180502,
+      "entry_price": 1657.646188358672,
+      "entry_date": "2024-08-15 00:00:00",
+      "exit_date": "2024-08-23 00:00:00",
+      "pnl": 421.80555271875664,
+      "pnl_pct": 0.12723027256389674,
+      "exit_reason": "target_achieved",
+      "days_held": 8
+    }
+  ],
+  "daily_portfolio": [
+    {
+      "date": "2024-06-17",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-06-24",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-07-01",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-07-08",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-07-15",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-07-22",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-07-29",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-08-05",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-08-12",
+      "cash": 100236.27732319568,
+      "total_value": 100236.27732319568,
+      "positions": 0
+    },
+    {
+      "date": "2024-08-19",
+      "cash": 93605.692569761,
+      "total_value": 100401.6563320917,
+      "positions": 1
+    },
+    {
+      "date": "2024-08-26",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-09-02",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-09-09",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-09-16",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-09-23",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-09-30",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-10-07",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-10-14",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-10-21",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    },
+    {
+      "date": "2024-10-28",
+      "cash": 101079.8884286332,
+      "total_value": 101079.8884286332,
+      "positions": 0
+    }
+  ]
+}

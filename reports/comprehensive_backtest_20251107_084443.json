@@ -1,0 +1,870 @@
+{
+  "timestamp": "2025-11-07T08:44:43.596768",
+  "test_parameters": {
+    "symbols": [
+      "RELIANCE",
+      "TCS",
+      "HDFCBANK",
+      "INFY",
+      "HINDUNILVR",
+      "ICICIBANK",
+      "SBIN"
+    ],
+    "start_date": "2023-01-01",
+    "end_date": "2024-10-31",
+    "initial_capital": 100000
+  },
+  "individual_strategies": {
+    "optimized_buy_hold": {
+      "strategy": "optimized_buy_hold",
+      "initial_capital": 100000,
+      "final_capital": 100000,
+      "total_return": 0.0,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "avg_win": 0,
+      "avg_loss": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        }
+      ]
+    },
+    "trend_following": {
+      "strategy": "trend_following",
+      "initial_capital": 100000,
+      "final_capital": 100000,
+      "total_return": 0.0,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "avg_win": 0,
+      "avg_loss": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        }
+      ]
+    },
+    "mean_reversion": {
+      "strategy": "mean_reversion",
+      "initial_capital": 100000,
+      "final_capital": 102535.0979370668,
+      "total_return": 0.025350979370668065,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "avg_win": 0,
+      "avg_loss": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8357.923759547168,
+          "total_value": 102682.1308078455
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8299.204589650859,
+          "total_value": 102623.4116379492
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8809.485466182183,
+          "total_value": 103133.69251448053
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8298.416407956467,
+          "total_value": 102622.6234562548
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8978.095327151406,
+          "total_value": 103302.30237544974
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8538.370649354736,
+          "total_value": 102862.57769765308
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8085.1012159705315,
+          "total_value": 102409.30826426887
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8310.098621544043,
+          "total_value": 102634.30566984238
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 8747.647067898148,
+          "total_value": 103071.85411619648
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 94324.20704829834,
+          "positions_value": 7987.930804558448,
+          "total_value": 102312.13785285679
+        }
+      ]
+    },
+    "breakout": {
+      "strategy": "breakout",
+      "initial_capital": 100000,
+      "final_capital": 100000,
+      "total_return": 0.0,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "avg_win": 0,
+      "avg_loss": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        }
+      ]
+    },
+    "momentum": {
+      "strategy": "momentum",
+      "initial_capital": 100000,
+      "final_capital": 100000,
+      "total_return": 0.0,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "avg_win": 0,
+      "avg_loss": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        }
+      ]
+    },
+    "vwap_intraday": {
+      "strategy": "vwap_intraday",
+      "initial_capital": 100000,
+      "final_capital": 100000,
+      "total_return": 0.0,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "avg_win": 0,
+      "avg_loss": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        }
+      ]
+    }
+  },
+  "multi_strategies": {
+    "conservative": {
+      "allocation_name": "Conservative",
+      "allocation": {
+        "optimized_buy_hold": 0.4,
+        "mean_reversion": 0.3,
+        "trend_following": 0.2,
+        "vwap_intraday": 0.1
+      },
+      "initial_capital": 100000,
+      "final_capital": 100845.03264568893,
+      "total_return": 0.008450326456889307,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "strategy_performance": {
+        "optimized_buy_hold": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "mean_reversion": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "trend_following": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "vwap_intraday": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-07-22 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2711.380132129129,
+          "total_value": 100819.44914822857
+        },
+        {
+          "date": "2024-07-29 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2800.3403691815724,
+          "total_value": 100908.40938528102
+        },
+        {
+          "date": "2024-08-05 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2971.639871620487,
+          "total_value": 101079.70888771993
+        },
+        {
+          "date": "2024-08-12 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2858.8123272065013,
+          "total_value": 100966.88134330594
+        },
+        {
+          "date": "2024-08-19 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2880.4455872943336,
+          "total_value": 100988.51460339378
+        },
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2785.9745865157224,
+          "total_value": 100894.04360261516
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2766.40152988362,
+          "total_value": 100874.47054598306
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2936.495155394061,
+          "total_value": 101044.5641714935
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2766.138802652156,
+          "total_value": 100874.2078187516
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2992.698442383802,
+          "total_value": 101100.76745848324
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2846.123549784912,
+          "total_value": 100954.19256588435
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2695.033738656844,
+          "total_value": 100803.10275475628
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2770.032873848014,
+          "total_value": 100878.10188994746
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2915.882355966049,
+          "total_value": 101023.9513720655
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2662.6436015194827,
+          "total_value": 100770.71261761892
+        }
+      ]
+    },
+    "aggressive": {
+      "allocation_name": "Aggressive",
+      "allocation": {
+        "momentum": 0.3,
+        "breakout": 0.25,
+        "trend_following": 0.25,
+        "optimized_buy_hold": 0.2
+      },
+      "initial_capital": 100000,
+      "final_capital": 100000,
+      "total_return": 0.0,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "strategy_performance": {
+        "momentum": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "breakout": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "trend_following": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "optimized_buy_hold": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-07-22 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-07-29 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-08-05 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-08-12 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-08-19 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 100000,
+          "positions_value": 0,
+          "total_value": 100000
+        }
+      ]
+    },
+    "balanced": {
+      "allocation_name": "Balanced",
+      "allocation": {
+        "optimized_buy_hold": 0.25,
+        "trend_following": 0.25,
+        "mean_reversion": 0.2,
+        "momentum": 0.15,
+        "breakout": 0.15
+      },
+      "initial_capital": 100000,
+      "final_capital": 100845.03264568893,
+      "total_return": 0.008450326456889307,
+      "total_trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "max_drawdown": 0,
+      "sharpe_ratio": 0,
+      "strategy_performance": {
+        "optimized_buy_hold": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "trend_following": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "mean_reversion": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "momentum": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "breakout": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "trades": [],
+      "daily_values": [
+        {
+          "date": "2024-07-22 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2711.380132129129,
+          "total_value": 100819.44914822857
+        },
+        {
+          "date": "2024-07-29 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2800.3403691815724,
+          "total_value": 100908.40938528102
+        },
+        {
+          "date": "2024-08-05 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2971.639871620487,
+          "total_value": 101079.70888771993
+        },
+        {
+          "date": "2024-08-12 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2858.8123272065013,
+          "total_value": 100966.88134330594
+        },
+        {
+          "date": "2024-08-19 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2880.4455872943336,
+          "total_value": 100988.51460339378
+        },
+        {
+          "date": "2024-08-26 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2785.9745865157224,
+          "total_value": 100894.04360261516
+        },
+        {
+          "date": "2024-09-02 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2766.40152988362,
+          "total_value": 100874.47054598306
+        },
+        {
+          "date": "2024-09-09 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2936.495155394061,
+          "total_value": 101044.5641714935
+        },
+        {
+          "date": "2024-09-16 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2766.138802652156,
+          "total_value": 100874.2078187516
+        },
+        {
+          "date": "2024-09-23 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2992.698442383802,
+          "total_value": 101100.76745848324
+        },
+        {
+          "date": "2024-09-30 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2846.123549784912,
+          "total_value": 100954.19256588435
+        },
+        {
+          "date": "2024-10-07 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2695.033738656844,
+          "total_value": 100803.10275475628
+        },
+        {
+          "date": "2024-10-14 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2770.032873848014,
+          "total_value": 100878.10188994746
+        },
+        {
+          "date": "2024-10-21 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2915.882355966049,
+          "total_value": 101023.9513720655
+        },
+        {
+          "date": "2024-10-28 00:00:00",
+          "cash": 98108.06901609944,
+          "positions_value": 2662.6436015194827,
+          "total_value": 100770.71261761892
+        }
+      ]
+    }
+  },
+  "best_performers": {
+    "individual": "mean_reversion",
+    "multi_strategy": "conservative"
+  }
+}

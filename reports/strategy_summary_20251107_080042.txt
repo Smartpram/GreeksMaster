@@ -1,0 +1,36 @@
+
+MyBreezeApp Enhanced Strategy Backtest Summary
+Generated: 2025-11-07 08:00:42
+
+FINANCIAL PERFORMANCE:
+- Initial Capital: Rs. 100,000
+- Final Capital: Rs. 92,685  
+- Total P&L: Rs. -7,315
+- Portfolio Return: -7.31%
+- Annualized Return: -3.81%
+
+TRADING STATISTICS:
+- Total Trades: 105
+- Win Rate: 32.4%
+- Profit Factor: 0.79
+- Sharpe Ratio: -0.78
+- Max Drawdown: -9.97%
+
+SYMBOL PERFORMANCE:
+- HDFCBANK: Rs. 1,502 (16 trades)
+- HINDUNILVR: Rs. 1,092 (22 trades)
+- TCS: Rs. -470 (19 trades)
+- RELIANCE: Rs. -2,750 (22 trades)
+- INFY: Rs. -6,688 (26 trades)
+
+KEY RECOMMENDATIONS:
+1. Strategy is currently unprofitable - needs optimization
+2. Low win rate (32.4%) requires tighter entry conditions  
+3. High stop-loss rate suggests market timing issues
+4. Consider reducing position sizes and adding volume filters
+5. Test different technical indicator parameters
+
+NEXT STEPS:
+1. Implement optimization suggestions
+2. Re-run backtest with improved parameters
+3. Start paper trading before live deployment

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mybreeze-app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./backups:/app/backups
+      - ./reports:/app/reports
+    environment:
+      - FLASK_ENV=production
+      - PAPER_TRADING=True
+    env_file:
+      - .env
+    restart: unless-stopped
+    
+  # Optional: Add Redis for caching (uncomment if needed)
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   restart: unless-stopped
