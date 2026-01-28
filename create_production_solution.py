@@ -229,8 +229,8 @@ class BreezeAPIService:
         return market_open <= now <= market_close
 '''
     
-    # Write the updated service
-    with open('app/services/breeze_api_production.py', 'w') as f:
+    # Write the updated service (use UTF-8 encoding to support emoji/unicode)
+    with open('app/services/breeze_api_production.py', 'w', encoding='utf-8') as f:
         f.write(service_code)
     
     print("✅ Updated Breeze API service for production")
@@ -360,8 +360,8 @@ class LocalPortfolioTracker:
             }
 '''
     
-    # Write the portfolio tracker
-    with open('app/services/local_portfolio.py', 'w') as f:
+    # Write the portfolio tracker (use UTF-8 encoding)
+    with open('app/services/local_portfolio.py', 'w', encoding='utf-8') as f:
         f.write(tracker_code)
     
     print("✅ Created local portfolio tracking system")
@@ -401,7 +401,8 @@ echo "✅ MyBreezeApp deployed successfully!"
 echo "🌐 Access at: http://localhost:5000"
 '''
     
-    with open('deploy.sh', 'w') as f:
+    # Write deploy script using UTF-8 to handle emoji characters in the content
+    with open('deploy.sh', 'w', encoding='utf-8') as f:
         f.write(deployment_script)
     
     print("✅ Created deployment script")

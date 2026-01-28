@@ -201,17 +201,27 @@ class BreezeAPIService:
             logger.error(f"Portfolio positions exception: {e}")
             return {'success': False, 'error': str(e)}
     
-    def get_funds(self) -> Dict:
+    def get_funds(self, ucc: Optional[str] = None, demat: Optional[str] = None) -> Dict:
         """Get funds information (working endpoint)"""
         if not self.is_authenticated():
             return {'success': False, 'error': 'Not authenticated'}
         
         try:
             url = f"{self.base_url}/funds"
-            # For endpoints that don't require body parameters, send without JSON
-            headers = self.get_headers("")
-            
-            response = requests.get(url, headers=headers, timeout=30)
+            # Build payload only when account-specific params are provided
+            payload = {}
+            if ucc:
+                payload['ucc'] = ucc
+            if demat:
+                payload['demat'] = demat
+
+            # Calculate headers and perform request
+            headers = self.get_headers(payload if payload else "")
+
+            if payload:
+                response = requests.get(url, json=payload, headers=headers, timeout=30)
+            else:
+                response = requests.get(url, headers=headers, timeout=30)
             
             if response.status_code == 200:
                 data = response.json()
@@ -230,9 +240,91 @@ class BreezeAPIService:
         except Exception as e:
             logger.error(f"Funds exception: {e}")
             return {'success': False, 'error': str(e)}
+
+    def get_portfolio_holdings(self, exchange_code: str = "NFO", from_date: Optional[str] = None,
+                               to_date: Optional[str] = None, stock_code: str = "", portfolio_type: str = "") -> Dict:
+        """Get portfolio holdings (matches documentation)
+
+        Parameters mirror the Breeze documentation sample:
+          - exchange_code (e.g. 'NFO')
+          - from_date / to_date in ISO format (e.g. '2024-08-01T06:00:00.000Z')
+          - stock_code (optional)
+          - portfolio_type (optional)
+        """
+        if not self.is_authenticated():
+            return {'success': False, 'error': 'Not authenticated'}
+
+        try:
+            url = f"{self.base_url}/portfolioholdings"
+
+            # Default date range = last 30 days if not provided
+            now = datetime.utcnow()
+            if to_date is None:
+                to_date = now.strftime('%Y-%m-%dT%H:%M:%S.000Z')
+            if from_date is None:
+                from_dt = now - timedelta(days=30)
+                from_date = from_dt.strftime('%Y-%m-%dT%H:%M:%S.000Z')
+
+            payload = {
+                'exchange_code': exchange_code,
+                'from_date': from_date,
+                'to_date': to_date,
+                'stock_code': stock_code,
+                'portfolio_type': portfolio_type
+            }
+
+            # support optional account filters
+            # under-specification: include ucc/demat if passed via kwargs in future calls
+            # if caller passed 'ucc' or 'demat' as attributes on this instance or via kwargs, they'll be added by the caller
+
+            # Headers include checksum/timestamp/session
+            headers = self.get_headers(payload)
+
+            response = requests.get(url, json=payload, headers=headers, timeout=30)
+
+            if response.status_code == 200:
+                data = response.json()
+                if 'Success' in data:
+                    logger.info("Successfully retrieved portfolio holdings")
+                    return {'success': True, 'data': data['Success']}
+                else:
+                    error_msg = data.get('Error', 'Unknown error')
+                    logger.error(f"Portfolio holdings error: {error_msg}")
+                    return {'success': False, 'error': error_msg, 'raw': data}
+            else:
+                error_msg = f'HTTP {response.status_code}: {response.text[:400]}'
+                logger.error(f"Portfolio holdings HTTP error: {error_msg}")
+                return {'success': False, 'error': error_msg, 'status_code': response.status_code, 'raw': response.text}
+
+        except Exception as e:
+            logger.error(f"Portfolio holdings exception: {e}")
+            return {'success': False, 'error': str(e)}
     
     def get_quotes(self, stock_code: str, exchange_code: str = "NSE", product_type: str = "cash") -> Dict:
         """Get live quotes"""
+        # Validate inputs using validators module
+        try:
+            from app.services.validators import validate_quote_params
+        except Exception:
+            validate_quote_params = None
+
+        params = {
+            'stock_code': stock_code,
+            'exchange_code': exchange_code,
+            'product_type': product_type,
+            'expiry_date': '',
+            'strike_price': '',
+            'right': '',
+            'get_exchange_quotes': True,
+            'get_market_depth': False,
+            'interval': None
+        }
+
+        if validate_quote_params:
+            ok, err = validate_quote_params(params)
+            if not ok:
+                return {'success': False, 'error': f'Invalid quote parameters: {err}'}
+
         if not self.is_authenticated():
             return {'success': False, 'error': 'Not authenticated'}
         

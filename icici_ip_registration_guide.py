@@ -69,8 +69,9 @@ ip_data = {
 }
 
 import json
-with open('network_config.json', 'w') as f:
-    json.dump(ip_data, f, indent=2)
+# Use UTF-8 encoding when writing JSON with emoji/unicode content
+with open('network_config.json', 'w', encoding='utf-8') as f:
+   json.dump(ip_data, f, indent=2, ensure_ascii=False)
 
 print("✅ Network configuration saved to network_config.json")
 print(f"✅ Your Primary IP for ICICI Direct: 38.101.95.130")

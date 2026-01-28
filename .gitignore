@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual env
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Database
+*.db
+mybreeze.db
+
+# Environment
+.env
+
+# Editor
+.vscode/
+*.swp
+
+# Artifacts and logs
+artifacts/
+*.log
+
+# Node
+node_modules/

@@ -39,6 +39,8 @@ class Config:
     
     # Database settings (SQLite for simplicity)
     DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///mybreeze.db')
+    # Ingest API key for protecting ingestion endpoints (defaults to SECRET_KEY)
+    INGEST_API_KEY = os.getenv('INGEST_API_KEY', SECRET_KEY)
     
     # Notification settings
     EMAIL_ENABLED = os.getenv('EMAIL_ENABLED', 'False').lower() == 'true'

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GTT Viewer - MyBreezeApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gtt.css') }}" rel="stylesheet">
+    <script>
+        const API_GTT_TABLE = '/api/gtt/table';
+    </script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4>GTT Orders</h4>
+            <div>
+                <button id="refreshBtn" class="btn btn-sm btn-primary">Refresh</button>
+            </div>
+        </div>
+
+        <div id="tableContainer">
+            <div class="row mb-2">
+                <div class="col-md-3">
+                    <input id="filterInstrument" class="form-control form-control-sm" placeholder="Filter instrument">
+                </div>
+                <div class="col-md-3">
+                    <input id="filterGttId" class="form-control form-control-sm" placeholder="Filter GTT ID">
+                </div>
+                <div class="col-md-2">
+                    <select id="filterStatus" class="form-select form-select-sm">
+                        <option value="">All statuses</option>
+                        <option value="All Cancelled">All Cancelled</option>
+                        <option value="All Filled">All Filled</option>
+                        <option value="Mixed">Mixed</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select id="perPage" class="form-select form-select-sm">
+                        <option value="10">10</option>
+                        <option value="25" selected>25</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+            </div>
+            <table class="table table-sm table-striped">
+                <thead>
+                    <tr>
+                        <th>Created</th>
+                        <th>GTT ID</th>
+                        <th>Fresh Order ID</th>
+                        <th>Instrument</th>
+                        <th>Qty</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Legs</th>
+                    </tr>
+                </thead>
+                <tbody id="gttBody">
+                </tbody>
+            </table>
+            <nav>
+                <ul id="pagination" class="pagination pagination-sm"></ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/gtt_viewer.js') }}"></script>
+</body>
+</html>

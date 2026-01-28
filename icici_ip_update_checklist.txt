@@ -1,0 +1,43 @@
+
+🎯 ICICI DIRECT IP UPDATE CHECKLIST
+==========================================
+
+□ 1. Access ICICI Direct API Portal
+   - Login with your credentials
+   - Navigate to API management section
+
+□ 2. Locate IP/Session Management
+   - Find IP whitelist or session key section
+   - Identify current registered IPs
+
+□ 3. Update IP Address
+   - Remove: 192.168.18.1 (if present)
+   - Add: 38.101.95.130
+   - Save changes
+
+□ 4. Generate New Session Key
+   - Create new session key with updated IP
+   - Copy the new session token
+
+□ 5. Update Local Configuration
+   - Update .env file with new session token
+   - Keep other credentials unchanged
+
+□ 6. Test Updated Configuration
+   - Test authentication
+   - Test quotes endpoint
+   - Test portfolio endpoint (should now work!)
+
+□ 7. Verify Full Functionality
+   - All endpoints working
+   - No IP-related errors
+   - Portfolio data accessible
+
+EXPECTED OUTCOME AFTER FIX:
+✅ Authentication: Working
+✅ Quotes: Working  
+✅ Portfolio: Working (FIXED!)
+✅ Funds: Working (FIXED!)
+
+==========================================
+    

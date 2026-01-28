@@ -146,7 +146,8 @@ EXPECTED OUTCOME AFTER FIX:
 ==========================================
     """
     
-    with open('icici_ip_update_checklist.txt', 'w') as f:
+    # Write checklist using UTF-8 encoding to support emoji and special characters
+    with open('icici_ip_update_checklist.txt', 'w', encoding='utf-8') as f:
         f.write(checklist)
     
     print(checklist)
