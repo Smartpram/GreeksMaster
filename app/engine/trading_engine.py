@@ -60,30 +60,30 @@ class CycleMetrics:
     
     # Stage 1: Signal Generation
     signals_generated: int
-    signal_details: List[Dict] = None
     
     # Stage 2: Validation & Risk
     signals_validated: int
     signals_rejected: int
-    rejection_reasons: List[str] = None
-    regime: str = "unknown"
     
     # Stage 3: Trade Execution
     trades_executed: int
     execution_failures: int
-    execution_errors: List[str] = None
     
     # Stage 4: Exit Management
     positions_monitored: int
     positions_exited: int
-    exit_details: List[Dict] = None
     
     # Stage 5: Risk Monitoring
     risk_alerts: int
+    
+    # Optional fields with defaults
+    signal_details: List[Dict] = None
+    rejection_reasons: List[str] = None
+    regime: str = "unknown"
+    execution_errors: List[str] = None
+    exit_details: List[Dict] = None
     daily_pnl: float = 0.0
     portfolio_value: float = 0.0
-    
-    # Overall
     status: str = "completed"
     errors: List[str] = None
     
