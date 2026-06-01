@@ -1,0 +1,14 @@
+{
+  "timestamp": "20260601_102111",
+  "repo_root": ".",
+  "actions": {
+    "archived": [],
+    "moved": [],
+    "deleted": []
+  },
+  "stats": {
+    "archived_count": 55,
+    "moved_count": 2,
+    "deleted_count": 16
+  }
+}

@@ -1,0 +1,65 @@
+Strategy,Symbol,Return%,Sharpe,MaxDD%,WinRate%,Trades,Signals,Status
+Buy & Hold Trend,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,INFY,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,TCS,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,HDFC,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Buy & Hold Trend,SBIN,0.0,0.0,0.0,0.0,0,0,Error: BuyHoldTrendStrategy.__init__() missing 2 required
+Mean Reversion,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,INFY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,TCS,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,HDFC,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Mean Reversion,SBIN,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'BB_PERIOD'
+Momentum,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,INFY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,TCS,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,HDFC,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Momentum,SBIN,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'RSI_MOMENTUM_THRESH
+Trend Following,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,INFY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,TCS,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,HDFC,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Trend Following,SBIN,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MA_SHORT'
+Breakout,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,INFY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,TCS,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,HDFC,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+Breakout,SBIN,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VOLUME_CONFIRMATION
+VWAP Intraday,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,INFY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,TCS,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,HDFC,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+VWAP Intraday,SBIN,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'VWAP_PERIOD'
+Optimized B&H,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,INFY,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,TCS,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,HDFC,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+Optimized B&H,SBIN,0.0,0.0,0.0,0.0,0,0,Error: 'str' object has no attribute 'MIN_SIGNAL_STRENGTH
+AI Enhanced,NIFTY,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,BANKNIFTY,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,INFY,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,TCS,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,RELIANCE,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,HDFC,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,ICICIBANK,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p
+AI Enhanced,SBIN,0.0,0.0,0.0,0.0,0,0,Error: AIEnhancedStrategy.__init__() missing 2 required p

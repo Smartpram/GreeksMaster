@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-28T22:06:22.705859",
+  "strategy_validation": {
+    "walk_forward_consistency": 0.2769739378936621,
+    "parameter_sensitivity_robust": "False",
+    "regime_analysis": "{'bull_calm': {'days': 76, 'avg_return': np.float64(-0.01498704319425673), 'volatility': np.float64(0.8185146526572664), 'sharpe': np.float64(-0.29066301294515534), 'price_range': '\u20b92399.17 - \u20b92612.68'}, 'bull_volatile': {'days': 94, 'avg_return': np.float64(0.14092506636383537), 'volatility': np.float64(0.7500703552854575), 'sharpe': np.float64(2.9825416493263517), 'price_range': '\u20b92326.78 - \u20b92514.69'}, 'bear_calm': {'days': 59, 'avg_return': np.float64(-0.20523045907023713), 'volatility': np.float64(0.8773350326232088), 'sharpe': np.float64(-3.713441747779834), 'price_range': '\u20b92218.83 - \u20b92403.76'}, 'bear_volatile': {'days': 19, 'avg_return': np.float64(0.03683714673526788), 'volatility': np.float64(1.0743422929269668), 'sharpe': np.float64(0.5443065766601397), 'price_range': '\u20b92275.67 - \u20b92376.92'}}",
+    "status": "NEEDS_WORK"
+  },
+  "execution_realism": {
+    "cost_as_pct_of_gross": 20.634,
+    "still_profitable_after_2x_costs": "True",
+    "status": "READY"
+  },
+  "safety_controls": {
+    "kill_switch": "True",
+    "order_limits": "True",
+    "reconciliation": "True",
+    "manual_override": "True",
+    "status": "READY"
+  },
+  "production_metrics": {
+    "expectancy_per_trade": 366.66666666666663,
+    "avg_holding_duration_minutes": 90.0,
+    "avg_slippage_bps": 15.816370992841582,
+    "hit_rate_by_symbol": "{'RELIANCE': {'trades': 2, 'wins': 1, 'hit_rate_pct': 50.0}, 'TCS': {'trades': 1, 'wins': 1, 'hit_rate_pct': 100.0}}",
+    "status": "READY"
+  }
+}

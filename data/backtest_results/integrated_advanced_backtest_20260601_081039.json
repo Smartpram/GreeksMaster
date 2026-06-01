@@ -1,0 +1,18 @@
+{
+  "test_run": "2026-06-01T08:10:39.765373",
+  "configurations": [
+    {
+      "name": "BASE_ONLY",
+      "stoch_rsi": false,
+      "fibonacci": false,
+      "renko": false
+    },
+    {
+      "name": "WITH_ALL",
+      "stoch_rsi": true,
+      "fibonacci": true,
+      "renko": true
+    }
+  ],
+  "results": {}
+}

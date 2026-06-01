@@ -1,0 +1,469 @@
+{
+  "test_run": "2026-06-01T08:34:27.343354",
+  "configurations": [
+    {
+      "name": "BASE_ONLY",
+      "stoch_rsi": false,
+      "fibonacci": false,
+      "renko": false
+    },
+    {
+      "name": "WITH_ALL",
+      "stoch_rsi": true,
+      "fibonacci": true,
+      "renko": true
+    }
+  ],
+  "results": {
+    "RELIND": {
+      "BASE_ONLY": {
+        "stock_code": "RELIND",
+        "config": {
+          "stoch_rsi": false,
+          "fibonacci": false,
+          "renko": false
+        },
+        "trades": [
+          {
+            "entry_date": "2026-01-16",
+            "entry_price": 1457.9,
+            "exit_date": "2026-01-19",
+            "exit_price": 1413.6,
+            "units": 65,
+            "pnl": -2879.500000000012,
+            "pnl_pct": -3.0386171891076326,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-01-21",
+            "entry_price": 1404.6,
+            "exit_date": "2026-02-01",
+            "exit_price": 1347.0,
+            "units": 62,
+            "pnl": -3571.1999999999944,
+            "pnl_pct": -4.100811618966247,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-02-02",
+            "entry_price": 1390.4,
+            "exit_date": "2026-02-09",
+            "exit_price": 1461.6,
+            "units": 57,
+            "pnl": 4058.3999999999896,
+            "pnl_pct": 5.120828538550044,
+            "exit_reason": "PROFIT_TARGET"
+          },
+          {
+            "entry_date": "2026-02-10",
+            "entry_price": 1458.5,
+            "exit_date": "2026-02-13",
+            "exit_price": 1419.6,
+            "units": 54,
+            "pnl": -2100.600000000005,
+            "pnl_pct": -2.667123757284888,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-02-16",
+            "entry_price": 1437.1,
+            "exit_date": "2026-02-25",
+            "exit_price": 1398.5,
+            "units": 50,
+            "pnl": -1929.9999999999955,
+            "pnl_pct": -2.685964790202485,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-02-27",
+            "entry_price": 1393.9,
+            "exit_date": "2026-03-02",
+            "exit_price": 1358.0,
+            "units": 47,
+            "pnl": -1687.3000000000043,
+            "pnl_pct": -2.575507568692165,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-03-04",
+            "entry_price": 1345.0,
+            "exit_date": "2026-03-09",
+            "exit_price": 1424.0,
+            "units": 45,
+            "pnl": 3555.0,
+            "pnl_pct": 5.87360594795539,
+            "exit_reason": "PROFIT_TARGET"
+          },
+          {
+            "entry_date": "2026-03-10",
+            "entry_price": 1408.8,
+            "exit_date": "2026-03-27",
+            "exit_price": 1348.1,
+            "units": 43,
+            "pnl": -2610.100000000002,
+            "pnl_pct": -4.308631459398073,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-03-30",
+            "entry_price": 1343.9,
+            "exit_date": "2026-04-06",
+            "exit_price": 1304.7,
+            "units": 40,
+            "pnl": -1568.0000000000018,
+            "pnl_pct": -2.916883696703627,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-04-07",
+            "entry_price": 1304.6,
+            "exit_date": "2026-04-28",
+            "exit_price": 1388.9,
+            "units": 38,
+            "pnl": 3203.400000000007,
+            "pnl_pct": 6.461750728192564,
+            "exit_reason": "PROFIT_TARGET"
+          },
+          {
+            "entry_date": "2026-04-29",
+            "entry_price": 1425.4,
+            "exit_date": "2026-05-11",
+            "exit_price": 1388.2,
+            "units": 35,
+            "pnl": -1302.0000000000016,
+            "pnl_pct": -2.6097937421074815,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-05-12",
+            "entry_price": 1364.0,
+            "exit_date": "2026-05-15",
+            "exit_price": 1336.4,
+            "units": 33,
+            "pnl": -910.799999999997,
+            "pnl_pct": -2.023460410557178,
+            "exit_reason": "STOP_LOSS"
+          }
+        ],
+        "metrics": {
+          "total_trades": 12,
+          "winning_trades": 3,
+          "losing_trades": 9,
+          "breakeven_trades": 0,
+          "win_rate": 25.0,
+          "total_pnl": -7742.700000000017,
+          "return_pct": -7.742700000000018,
+          "avg_win": 3605.5999999999985,
+          "avg_loss": -2062.1666666666683,
+          "profit_factor": 0.5828174250383895,
+          "max_drawdown": -0.0,
+          "sharpe_ratio": -4.012721574847301,
+          "indicators": {
+            "stoch_rsi": 0,
+            "fibonacci": 0,
+            "renko": 0
+          }
+        }
+      },
+      "WITH_ALL": {
+        "stock_code": "RELIND",
+        "config": {
+          "stoch_rsi": true,
+          "fibonacci": true,
+          "renko": true
+        },
+        "trades": [
+          {
+            "entry_date": "2026-02-02",
+            "entry_price": 1390.4,
+            "exit_date": "2026-02-09",
+            "exit_price": 1461.6,
+            "units": 68,
+            "pnl": 4841.599999999988,
+            "pnl_pct": 5.120828538550044,
+            "exit_reason": "PROFIT_TARGET"
+          },
+          {
+            "entry_date": "2026-02-13",
+            "entry_price": 1419.6,
+            "exit_date": "2026-03-02",
+            "exit_price": 1358.0,
+            "units": 66,
+            "pnl": -4065.599999999994,
+            "pnl_pct": -4.339250493096641,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-03-06",
+            "entry_price": 1404.8,
+            "exit_date": "2026-03-27",
+            "exit_price": 1348.1,
+            "units": 60,
+            "pnl": -3402.0000000000027,
+            "pnl_pct": -4.036161731207293,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-04-17",
+            "entry_price": 1365.0,
+            "exit_date": "2026-04-24",
+            "exit_price": 1327.8,
+            "units": 56,
+            "pnl": -2083.2000000000025,
+            "pnl_pct": -2.7252747252747285,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-05-06",
+            "entry_price": 1437.9,
+            "exit_date": "2026-05-11",
+            "exit_price": 1388.2,
+            "units": 49,
+            "pnl": -2435.300000000002,
+            "pnl_pct": -3.4564295152653206,
+            "exit_reason": "STOP_LOSS"
+          }
+        ],
+        "metrics": {
+          "total_trades": 5,
+          "winning_trades": 1,
+          "losing_trades": 4,
+          "breakeven_trades": 0,
+          "win_rate": 20.0,
+          "total_pnl": -7144.500000000014,
+          "return_pct": -7.144500000000013,
+          "avg_win": 4841.599999999988,
+          "avg_loss": -2996.5250000000005,
+          "profit_factor": 0.4039345575291368,
+          "max_drawdown": -247.56485459352348,
+          "sharpe_ratio": -7.060860692784552,
+          "indicators": {
+            "stoch_rsi": 5,
+            "fibonacci": 5,
+            "renko": 5
+          }
+        }
+      }
+    },
+    "TCS": {
+      "BASE_ONLY": {
+        "stock_code": "TCS",
+        "config": {
+          "stoch_rsi": false,
+          "fibonacci": false,
+          "renko": false
+        },
+        "trades": [
+          {
+            "entry_date": "2026-01-13",
+            "entry_price": 3268.0,
+            "exit_date": "2026-01-14",
+            "exit_price": 3192.5,
+            "units": 29,
+            "pnl": -2189.5,
+            "pnl_pct": -2.3102815177478577,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-01-16",
+            "entry_price": 3206.7,
+            "exit_date": "2026-01-20",
+            "exit_price": 3102.3,
+            "units": 27,
+            "pnl": -2818.79999999999,
+            "pnl_pct": -3.2556834128543253,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-02-02",
+            "entry_price": 3169.6,
+            "exit_date": "2026-02-04",
+            "exit_price": 2999.1,
+            "units": 25,
+            "pnl": -4262.5,
+            "pnl_pct": -5.379227662796567,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-02-06",
+            "entry_price": 2941.6,
+            "exit_date": "2026-02-12",
+            "exit_price": 2750.1,
+            "units": 24,
+            "pnl": -4596.0,
+            "pnl_pct": -6.510062550992657,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-02-13",
+            "entry_price": 2692.2,
+            "exit_date": "2026-02-24",
+            "exit_price": 2573.7,
+            "units": 23,
+            "pnl": -2725.5,
+            "pnl_pct": -4.401604635613996,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-03-06",
+            "entry_price": 2557.6,
+            "exit_date": "2026-03-11",
+            "exit_price": 2464.9,
+            "units": 21,
+            "pnl": -1946.6999999999962,
+            "pnl_pct": -3.624491710979036,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-03-18",
+            "entry_price": 2440.8,
+            "exit_date": "2026-03-19",
+            "exit_price": 2356.0,
+            "units": 20,
+            "pnl": -1696.0000000000036,
+            "pnl_pct": -3.4742707309079064,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-03-20",
+            "entry_price": 2390.6,
+            "exit_date": "2026-04-07",
+            "exit_price": 2539.8,
+            "units": 18,
+            "pnl": 2685.600000000005,
+            "pnl_pct": 6.2411110181544505,
+            "exit_reason": "PROFIT_TARGET"
+          },
+          {
+            "entry_date": "2026-04-08",
+            "entry_price": 2559.2,
+            "exit_date": "2026-04-13",
+            "exit_price": 2472.6,
+            "units": 16,
+            "pnl": -1385.5999999999985,
+            "pnl_pct": -3.383869959362298,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-04-15",
+            "entry_price": 2554.9,
+            "exit_date": "2026-04-24",
+            "exit_price": 2396.9,
+            "units": 14,
+            "pnl": -2212.0,
+            "pnl_pct": -6.184195076128224,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-05-12",
+            "entry_price": 2300.3,
+            "exit_date": "2026-05-14",
+            "exit_price": 2246.0,
+            "units": 13,
+            "pnl": -705.9000000000024,
+            "pnl_pct": -2.360561665869677,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-05-19",
+            "entry_price": 2327.1,
+            "exit_date": "2026-05-26",
+            "exit_price": 2276.2,
+            "units": 11,
+            "pnl": -559.900000000001,
+            "pnl_pct": -2.1872717115723472,
+            "exit_reason": "STOP_LOSS"
+          }
+        ],
+        "metrics": {
+          "total_trades": 12,
+          "winning_trades": 1,
+          "losing_trades": 11,
+          "breakeven_trades": 0,
+          "win_rate": 8.333333333333332,
+          "total_pnl": -22412.799999999985,
+          "return_pct": -22.412799999999987,
+          "avg_win": 2685.600000000005,
+          "avg_loss": -2281.672727272726,
+          "profit_factor": 0.10700283683422074,
+          "max_drawdown": -0.0,
+          "sharpe_ratio": -16.425561449843237,
+          "indicators": {
+            "stoch_rsi": 0,
+            "fibonacci": 0,
+            "renko": 0
+          }
+        }
+      },
+      "WITH_ALL": {
+        "stock_code": "TCS",
+        "config": {
+          "stoch_rsi": true,
+          "fibonacci": true,
+          "renko": true
+        },
+        "trades": [
+          {
+            "entry_date": "2026-02-02",
+            "entry_price": 3169.6,
+            "exit_date": "2026-02-04",
+            "exit_price": 2999.1,
+            "units": 29,
+            "pnl": -4944.5,
+            "pnl_pct": -5.379227662796567,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-04-07",
+            "entry_price": 2539.8,
+            "exit_date": "2026-04-13",
+            "exit_price": 2472.6,
+            "units": 32,
+            "pnl": -2150.4000000000087,
+            "pnl_pct": -2.6458776281597083,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-04-15",
+            "entry_price": 2554.9,
+            "exit_date": "2026-04-24",
+            "exit_price": 2396.9,
+            "units": 29,
+            "pnl": -4582.0,
+            "pnl_pct": -6.184195076128224,
+            "exit_reason": "STOP_LOSS"
+          },
+          {
+            "entry_date": "2026-05-19",
+            "entry_price": 2327.1,
+            "exit_date": "2026-05-26",
+            "exit_price": 2276.2,
+            "units": 28,
+            "pnl": -1425.2000000000025,
+            "pnl_pct": -2.1872717115723472,
+            "exit_reason": "STOP_LOSS"
+          }
+        ],
+        "metrics": {
+          "total_trades": 4,
+          "winning_trades": 0,
+          "losing_trades": 4,
+          "breakeven_trades": 0,
+          "win_rate": 0.0,
+          "total_pnl": -13102.100000000011,
+          "return_pct": -13.10210000000001,
+          "avg_win": 0,
+          "avg_loss": -3275.525000000003,
+          "profit_factor": 0.0,
+          "max_drawdown": -0.0,
+          "sharpe_ratio": -34.32032267008336,
+          "indicators": {
+            "stoch_rsi": 4,
+            "fibonacci": 5,
+            "renko": 5
+          }
+        }
+      }
+    }
+  }
+}

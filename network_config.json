@@ -1,8 +1,0 @@
-{
-  "public_ip": "38.101.95.130",
-  "local_ip": "192.168.18.28",
-  "gateway": "192.168.18.1",
-  "registration_date": "2025-11-07",
-  "status": "working",
-  "notes": "Session key already works from this IP"
-}

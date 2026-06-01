@@ -1,0 +1,65 @@
+Strategy,Symbol,Return%,Sharpe,MaxDD%,WinRate%,Status
+Buy & Hold Trend,NIFTY,-12.55,-0.14,27.75,51.37,Success
+Buy & Hold Trend,BANKNIFTY,-6.92,0.0,32.76,50.55,Success
+Buy & Hold Trend,INFY,-13.71,-0.16,37.17,49.18,Success
+Buy & Hold Trend,TCS,78.93,1.44,27.37,54.95,Success
+Buy & Hold Trend,RELIANCE,-9.1,-0.05,33.07,50.82,Success
+Buy & Hold Trend,HDFC,-25.72,-0.51,30.72,48.08,Success
+Buy & Hold Trend,ICICIBANK,10.15,0.37,26.74,52.47,Success
+Buy & Hold Trend,SBIN,-2.6,0.11,46.77,51.1,Success
+Mean Reversion,NIFTY,-12.55,-0.14,27.75,51.37,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,BANKNIFTY,-6.92,0.0,32.76,50.55,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,INFY,-13.71,-0.16,37.17,49.18,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,TCS,78.93,1.44,27.37,54.95,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,RELIANCE,-9.1,-0.05,33.07,50.82,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,HDFC,-25.72,-0.51,30.72,48.08,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,ICICIBANK,10.15,0.37,26.74,52.47,Init Error: MeanReversionStrategy: Wrapper
+Mean Reversion,SBIN,-2.6,0.11,46.77,51.1,Init Error: MeanReversionStrategy: Wrapper
+Momentum,NIFTY,-12.55,-0.14,27.75,51.37,Init Error: MomentumStrategy: Wrapper retu
+Momentum,BANKNIFTY,-6.92,0.0,32.76,50.55,Init Error: MomentumStrategy: Wrapper retu
+Momentum,INFY,-13.71,-0.16,37.17,49.18,Init Error: MomentumStrategy: Wrapper retu
+Momentum,TCS,78.93,1.44,27.37,54.95,Init Error: MomentumStrategy: Wrapper retu
+Momentum,RELIANCE,-9.1,-0.05,33.07,50.82,Init Error: MomentumStrategy: Wrapper retu
+Momentum,HDFC,-25.72,-0.51,30.72,48.08,Init Error: MomentumStrategy: Wrapper retu
+Momentum,ICICIBANK,10.15,0.37,26.74,52.47,Init Error: MomentumStrategy: Wrapper retu
+Momentum,SBIN,-2.6,0.11,46.77,51.1,Init Error: MomentumStrategy: Wrapper retu
+Trend Following,NIFTY,-12.55,-0.14,27.75,51.37,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,BANKNIFTY,-6.92,0.0,32.76,50.55,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,INFY,-13.71,-0.16,37.17,49.18,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,TCS,78.93,1.44,27.37,54.95,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,RELIANCE,-9.1,-0.05,33.07,50.82,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,HDFC,-25.72,-0.51,30.72,48.08,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,ICICIBANK,10.15,0.37,26.74,52.47,Init Error: TrendFollowingStrategy: Wrappe
+Trend Following,SBIN,-2.6,0.11,46.77,51.1,Init Error: TrendFollowingStrategy: Wrappe
+Breakout,NIFTY,-12.55,-0.14,27.75,51.37,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,BANKNIFTY,-6.92,0.0,32.76,50.55,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,INFY,-13.71,-0.16,37.17,49.18,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,TCS,78.93,1.44,27.37,54.95,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,RELIANCE,-9.1,-0.05,33.07,50.82,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,HDFC,-25.72,-0.51,30.72,48.08,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,ICICIBANK,10.15,0.37,26.74,52.47,Init Error: BreakoutStrategy: Wrapper retu
+Breakout,SBIN,-2.6,0.11,46.77,51.1,Init Error: BreakoutStrategy: Wrapper retu
+VWAP Intraday,NIFTY,-12.55,-0.14,27.75,51.37,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,BANKNIFTY,-6.92,0.0,32.76,50.55,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,INFY,-13.71,-0.16,37.17,49.18,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,TCS,78.93,1.44,27.37,54.95,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,RELIANCE,-9.1,-0.05,33.07,50.82,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,HDFC,-25.72,-0.51,30.72,48.08,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,ICICIBANK,10.15,0.37,26.74,52.47,Init Error: VWAPStrategy: Wrapper returned
+VWAP Intraday,SBIN,-2.6,0.11,46.77,51.1,Init Error: VWAPStrategy: Wrapper returned
+Optimized B&H,NIFTY,-12.55,-0.14,27.75,51.37,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,BANKNIFTY,-6.92,0.0,32.76,50.55,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,INFY,-13.71,-0.16,37.17,49.18,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,TCS,78.93,1.44,27.37,54.95,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,RELIANCE,-9.1,-0.05,33.07,50.82,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,HDFC,-25.72,-0.51,30.72,48.08,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,ICICIBANK,10.15,0.37,26.74,52.47,Init Error: OptimizedBuyHoldTrendStrategy:
+Optimized B&H,SBIN,-2.6,0.11,46.77,51.1,Init Error: OptimizedBuyHoldTrendStrategy:
+AI Enhanced,NIFTY,-12.55,-0.14,27.75,51.37,Success
+AI Enhanced,BANKNIFTY,-6.92,0.0,32.76,50.55,Success
+AI Enhanced,INFY,-13.71,-0.16,37.17,49.18,Success
+AI Enhanced,TCS,78.93,1.44,27.37,54.95,Success
+AI Enhanced,RELIANCE,-9.1,-0.05,33.07,50.82,Success
+AI Enhanced,HDFC,-25.72,-0.51,30.72,48.08,Success
+AI Enhanced,ICICIBANK,10.15,0.37,26.74,52.47,Success
+AI Enhanced,SBIN,-2.6,0.11,46.77,51.1,Success

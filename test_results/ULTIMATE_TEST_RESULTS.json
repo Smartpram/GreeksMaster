@@ -1,0 +1,266 @@
+{
+  "Buy & Hold": {
+    "NIFTY": {
+      "total_return": 2.39,
+      "sharpe_ratio": 0.211,
+      "max_drawdown": 37.41,
+      "win_rate": 52.05,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "BANKNIFTY": {
+      "total_return": -21.86,
+      "sharpe_ratio": -0.392,
+      "max_drawdown": 39.43,
+      "win_rate": 50.41,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "INFY": {
+      "total_return": -23.42,
+      "sharpe_ratio": -0.435,
+      "max_drawdown": 39.17,
+      "win_rate": 48.77,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "TCS": {
+      "total_return": 6.22,
+      "sharpe_ratio": 0.291,
+      "max_drawdown": 53.2,
+      "win_rate": 50.41,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "RELIANCE": {
+      "total_return": -17.86,
+      "sharpe_ratio": -0.253,
+      "max_drawdown": 41.51,
+      "win_rate": 49.32,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "HDFC": {
+      "total_return": -16.13,
+      "sharpe_ratio": -0.238,
+      "max_drawdown": 31.92,
+      "win_rate": 47.95,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "ICICIBANK": {
+      "total_return": 15.57,
+      "sharpe_ratio": 0.47,
+      "max_drawdown": 37.8,
+      "win_rate": 48.77,
+      "trades": 1,
+      "status": "SUCCESS"
+    },
+    "SBIN": {
+      "total_return": 131.53,
+      "sharpe_ratio": 1.939,
+      "max_drawdown": 18.93,
+      "win_rate": 53.42,
+      "trades": 1,
+      "status": "SUCCESS"
+    }
+  },
+  "Mean Reversion": {
+    "NIFTY": {
+      "total_return": 71.55,
+      "sharpe_ratio": 5.423712134216567e+16,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 10,
+      "status": "SUCCESS"
+    },
+    "BANKNIFTY": {
+      "total_return": 96.06,
+      "sharpe_ratio": 1.3534045051541189e+17,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 11,
+      "status": "SUCCESS"
+    },
+    "INFY": {
+      "total_return": -29.52,
+      "sharpe_ratio": -1.4048264762743566e+17,
+      "max_drawdown": 29.52,
+      "win_rate": 0.0,
+      "trades": 9,
+      "status": "SUCCESS"
+    },
+    "TCS": {
+      "total_return": -64.83,
+      "sharpe_ratio": -5.2396601035390104e+16,
+      "max_drawdown": 64.83,
+      "win_rate": 0.0,
+      "trades": 9,
+      "status": "SUCCESS"
+    },
+    "RELIANCE": {
+      "total_return": -70.24,
+      "sharpe_ratio": -6.076255341856438e+16,
+      "max_drawdown": 70.24,
+      "win_rate": 0.0,
+      "trades": 8,
+      "status": "SUCCESS"
+    },
+    "HDFC": {
+      "total_return": -14.9,
+      "sharpe_ratio": 0,
+      "max_drawdown": 14.9,
+      "win_rate": 0.0,
+      "trades": 10,
+      "status": "SUCCESS"
+    },
+    "ICICIBANK": {
+      "total_return": 85.78,
+      "sharpe_ratio": 1.2451123588377011e+17,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 11,
+      "status": "SUCCESS"
+    },
+    "SBIN": {
+      "total_return": 346.62,
+      "sharpe_ratio": 7.529774775474603e+16,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 8,
+      "status": "SUCCESS"
+    }
+  },
+  "Momentum": {
+    "NIFTY": {
+      "total_return": 1.1,
+      "sharpe_ratio": 1.4073638977768354e+17,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 41,
+      "status": "SUCCESS"
+    },
+    "BANKNIFTY": {
+      "total_return": -7.2,
+      "sharpe_ratio": 0,
+      "max_drawdown": 7.2,
+      "win_rate": 0.0,
+      "trades": 40,
+      "status": "SUCCESS"
+    },
+    "INFY": {
+      "total_return": 5.55,
+      "sharpe_ratio": 8.68541372440805e+16,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 32,
+      "status": "SUCCESS"
+    },
+    "TCS": {
+      "total_return": -6.0,
+      "sharpe_ratio": -9.942077129591437e+16,
+      "max_drawdown": 6.0,
+      "win_rate": 0.0,
+      "trades": 40,
+      "status": "SUCCESS"
+    },
+    "RELIANCE": {
+      "total_return": -7.27,
+      "sharpe_ratio": -6.0601100880177656e+16,
+      "max_drawdown": 7.27,
+      "win_rate": 0.0,
+      "trades": 38,
+      "status": "SUCCESS"
+    },
+    "HDFC": {
+      "total_return": 3.88,
+      "sharpe_ratio": 1.2248612468156398e+17,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 31,
+      "status": "SUCCESS"
+    },
+    "ICICIBANK": {
+      "total_return": 3.56,
+      "sharpe_ratio": 5.616986015703441e+16,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 37,
+      "status": "SUCCESS"
+    },
+    "SBIN": {
+      "total_return": 19.56,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 36,
+      "status": "SUCCESS"
+    }
+  },
+  "Trend Following": {
+    "NIFTY": {
+      "total_return": 251.6,
+      "sharpe_ratio": 1.2648303585308134e+17,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 6,
+      "status": "SUCCESS"
+    },
+    "BANKNIFTY": {
+      "total_return": -82.6,
+      "sharpe_ratio": 0,
+      "max_drawdown": 82.6,
+      "win_rate": 0.0,
+      "trades": 9,
+      "status": "SUCCESS"
+    },
+    "INFY": {
+      "total_return": -85.07,
+      "sharpe_ratio": 0,
+      "max_drawdown": 85.07,
+      "win_rate": 0.0,
+      "trades": 9,
+      "status": "SUCCESS"
+    },
+    "TCS": {
+      "total_return": 211.25,
+      "sharpe_ratio": 1.1420087100884827e+17,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 5,
+      "status": "SUCCESS"
+    },
+    "RELIANCE": {
+      "total_return": -58.62,
+      "sharpe_ratio": -8.850702954160566e+16,
+      "max_drawdown": 58.62,
+      "win_rate": 0.0,
+      "trades": 6,
+      "status": "SUCCESS"
+    },
+    "HDFC": {
+      "total_return": -27.98,
+      "sharpe_ratio": -6.588478276925761e+16,
+      "max_drawdown": 27.98,
+      "win_rate": 0.0,
+      "trades": 8,
+      "status": "SUCCESS"
+    },
+    "ICICIBANK": {
+      "total_return": -75.44,
+      "sharpe_ratio": -3.518164691943923e+16,
+      "max_drawdown": 75.44,
+      "win_rate": 0.0,
+      "trades": 6,
+      "status": "SUCCESS"
+    },
+    "SBIN": {
+      "total_return": 188.1,
+      "sharpe_ratio": 5.320778143755431e+16,
+      "max_drawdown": 0.0,
+      "win_rate": 100.0,
+      "trades": 7,
+      "status": "SUCCESS"
+    }
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "Buy & Hold Trend": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "Buy & Hold Trend",
+      "status": "Success",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "Mean Reversion": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "Mean Reversion",
+      "status": "Init Error: MeanReversionStrategy: Wrapper",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "Momentum": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "Momentum",
+      "status": "Init Error: MomentumStrategy: Wrapper retu",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "Trend Following": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "Trend Following",
+      "status": "Init Error: TrendFollowingStrategy: Wrappe",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "Breakout": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "Breakout",
+      "status": "Init Error: BreakoutStrategy: Wrapper retu",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "VWAP Intraday": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "VWAP Intraday",
+      "status": "Init Error: VWAPStrategy: Wrapper returned",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "Optimized B&H": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "Optimized B&H",
+      "status": "Init Error: OptimizedBuyHoldTrendStrategy:",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  },
+  "AI Enhanced": {
+    "NIFTY": {
+      "symbol": "NIFTY",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": -12.54979721075804,
+      "sharpe_ratio": -0.13597582897878252,
+      "max_drawdown": 27.7541693255191,
+      "win_rate": 51.373626373626365,
+      "trades": 1
+    },
+    "BANKNIFTY": {
+      "symbol": "BANKNIFTY",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": -6.924311238959657,
+      "sharpe_ratio": 0.00488444833697548,
+      "max_drawdown": 32.76269618355695,
+      "win_rate": 50.54945054945055,
+      "trades": 1
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": -13.705671227313776,
+      "sharpe_ratio": -0.16405512683912132,
+      "max_drawdown": 37.16641575409391,
+      "win_rate": 49.175824175824175,
+      "trades": 1
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": 78.92838137233211,
+      "sharpe_ratio": 1.4379379501255014,
+      "max_drawdown": 27.367757663762042,
+      "win_rate": 54.94505494505495,
+      "trades": 1
+    },
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": -9.0993774867277,
+      "sharpe_ratio": -0.05437540753320861,
+      "max_drawdown": 33.06805041323063,
+      "win_rate": 50.824175824175825,
+      "trades": 1
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": -25.715266260102876,
+      "sharpe_ratio": -0.5098692420321853,
+      "max_drawdown": 30.716083191162273,
+      "win_rate": 48.07692307692308,
+      "trades": 1
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": 10.146324400653018,
+      "sharpe_ratio": 0.3673835256324896,
+      "max_drawdown": 26.740404762355702,
+      "win_rate": 52.472527472527474,
+      "trades": 1
+    },
+    "SBIN": {
+      "symbol": "SBIN",
+      "strategy": "AI Enhanced",
+      "status": "Success",
+      "total_return": -2.5980567396173715,
+      "sharpe_ratio": 0.111181457352139,
+      "max_drawdown": 46.768806547593414,
+      "win_rate": 51.098901098901095,
+      "trades": 1
+    }
+  }
+}

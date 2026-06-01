@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-06-01T09:49:47.957806",
+  "backtest_period": {
+    "start": "2025-06-01",
+    "end": "2026-05-31"
+  },
+  "data_source": "Breeze API",
+  "symbols": [
+    "TCS",
+    "WIPRO",
+    "RELIND",
+    "MARUTI"
+  ],
+  "fixed_full_exit": {
+    "trades": 169,
+    "stats": {
+      "total_trades": 169,
+      "winning_trades": 50,
+      "losing_trades": 119,
+      "win_rate": 29.585798816568047,
+      "profit_factor": 1.1399285289325614,
+      "total_pnl": 359850.0000000004,
+      "avg_pnl_pct": -1.2661148414919237,
+      "sharpe_ratio": -3.282965246150282,
+      "max_drawdown": -77.9090825378311,
+      "avg_holding_days": 0.0
+    }
+  },
+  "partial_trailing": {
+    "trades": 169,
+    "stats": {
+      "total_trades": 169,
+      "winning_trades": 50,
+      "losing_trades": 119,
+      "win_rate": 29.585798816568047,
+      "profit_factor": 0.5699642644662807,
+      "total_pnl": -1105909.9999999995,
+      "avg_pnl_pct": -1.2661148414919237,
+      "sharpe_ratio": -3.282965246150282,
+      "max_drawdown": -528.0003096095046,
+      "avg_holding_days": 0.0
+    }
+  }
+}

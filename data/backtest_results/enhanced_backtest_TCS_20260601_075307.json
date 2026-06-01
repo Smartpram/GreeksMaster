@@ -1,0 +1,110 @@
+{
+  "stock_code": "TCS",
+  "period": {
+    "start": "2025-09-22",
+    "end": "2026-05-29",
+    "bars": 168
+  },
+  "capital": {
+    "initial": 300000,
+    "final": 300000,
+    "pnl": 0,
+    "return_pct": 0.0
+  },
+  "trades": {
+    "total": 0,
+    "winning": 0,
+    "losing": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0
+  },
+  "risk": {
+    "max_drawdown": 0.0,
+    "sharpe_ratio": 0
+  },
+  "trades_detail": [],
+  "regime_history": [
+    {
+      "date": "2026-04-30 12:04:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-04 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-05 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-06 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-07 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-08 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-11 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-12 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-13 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-14 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-15 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-18 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-19 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-20 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-21 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-22 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-25 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-26 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-27 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-29 12:05:00",
+      "regime": "unknown"
+    }
+  ]
+}

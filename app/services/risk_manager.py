@@ -1,5 +1,6 @@
 """
 Risk Management Service
+Enhanced with Market Time Aware volatility adjustments
 """
 import logging
 from typing import Dict, List, Optional, Tuple
@@ -56,14 +57,33 @@ class RiskManager:
     
     def calculate_stop_loss(self, entry_price: float, action: str, 
                            custom_sl_percent: Optional[float] = None) -> float:
-        """Calculate stop-loss price"""
+        """
+        Calculate stop-loss price with market-time aware volatility adjustment
+        
+        Adjusts stop loss wider during volatile market sessions (opening/closing bells)
+        """
         try:
+            # Import here to avoid circular imports
+            from app.strategies.market_time_filter import MarketTimeFilter
+            market_filter = MarketTimeFilter()
+            
             sl_percent = custom_sl_percent or self.config.DEFAULT_STOP_LOSS
             
+            # Adjust for market session volatility
+            adjusted_sl = market_filter.apply_volatility_adjustment(sl_percent)
+            
             if action.upper() == 'BUY':
-                stop_loss = entry_price * (1 - sl_percent)
+                stop_loss = entry_price * (1 - adjusted_sl)
             else:  # SELL
-                stop_loss = entry_price * (1 + sl_percent)
+                stop_loss = entry_price * (1 + adjusted_sl)
+            
+            # Log adjustment if different from base
+            if adjusted_sl != sl_percent:
+                session = market_filter.get_current_session()
+                logger.info(
+                    f"Stop loss adjusted for {session}: {sl_percent*100:.1f}% → {adjusted_sl*100:.1f}% "
+                    f"(Entry: {entry_price:.2f}, Stop: {stop_loss:.2f})"
+                )
             
             return round(stop_loss, 2)
             

@@ -1,5 +1,6 @@
 """
 Buy and Hold Trend-Following Positional Strategy
+Enhanced with Market Time Awareness for opening/closing volatility management
 """
 import logging
 from typing import Dict, List, Optional
@@ -9,6 +10,7 @@ import numpy as np
 from app.strategies.base_strategy import BaseStrategy
 from app.utils.indicators import TechnicalIndicators
 from app.config import Config
+from app.strategies.market_time_filter import MarketTimeFilter
 
 logger = logging.getLogger(__name__)
 
@@ -31,12 +33,14 @@ class BuyHoldTrendStrategy(BaseStrategy):
         super().__init__(order_manager, risk_manager, notification_service)
         self.config = Config()
         self.indicators = TechnicalIndicators()
+        self.market_filter = MarketTimeFilter()  # Initialize market time filter
         self.watchlist = []
         self.entry_conditions = {}
         self.exit_conditions = {}
         self.trend_period = self.config.TREND_PERIOD
         self.rsi_period = self.config.RSI_PERIOD
         self.positions = {}
+        logger.info("BuyHoldTrendStrategy initialized with Market Time Filter")
         
     def set_watchlist(self, instruments: List[str]):
         """Set the watchlist of instruments to trade"""
@@ -175,8 +179,29 @@ class BuyHoldTrendStrategy(BaseStrategy):
                                df: pd.DataFrame, macd: float, macd_signal: float, 
                                macd_histogram: float, stoch_rsi: float, 
                                stoch_rsi_k: float, stoch_rsi_d: float) -> Optional[Dict]:
-        """Check if entry conditions are met with enhanced technical analysis"""
+        """Check if entry conditions are met with enhanced technical analysis and market time awareness"""
         try:
+            # MARKET TIME FILTER CHECK 1: Skip entries during dangerous times
+            if self.market_filter.should_avoid_entry():
+                recommendation = self.market_filter.get_position_recommendation()
+                logger.info(
+                    f"{instrument}: Skipping entry during {self.market_filter.get_current_session()} - "
+                    f"{recommendation['reason']}"
+                )
+                return None
+            
+            # MARKET TIME FILTER CHECK 2: Skip gap trades in first 1.5 hours
+            if self.market_filter.should_skip_gap_trades():
+                if len(df) >= 2:
+                    previous_close = df['close'].iloc[-2]
+                    is_gap, gap_percent = self.market_filter.detect_gap(previous_close, price)
+                    if is_gap:
+                        logger.warning(
+                            f"{instrument}: Gap detected ({gap_percent*100:.2f}%) at market open - "
+                            f"Skipping trade to avoid reversal"
+                        )
+                        return None
+            
             # Skip if we already have a position
             if instrument in self.positions and self.positions[instrument]['quantity'] > 0:
                 return None

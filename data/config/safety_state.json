@@ -1,0 +1,19 @@
+{
+  "kill_switch_active": false,
+  "daily_loss": 0,
+  "orders_today": 1,
+  "max_position_loss": 0,
+  "pending_orders": {},
+  "executed_orders": {
+    "ORD_20260528220622702496": {
+      "symbol": "RELIANCE",
+      "quantity": 100,
+      "price": 2500,
+      "side": "buy",
+      "order_id": "ORD_20260528220622702496",
+      "timestamp": "2026-05-28T22:06:22.702539",
+      "order_key": "RELIANCE_buy_2500"
+    }
+  },
+  "timestamp": "2026-05-28T22:06:22.703169"
+}

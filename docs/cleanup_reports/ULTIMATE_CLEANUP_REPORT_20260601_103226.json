@@ -1,0 +1,734 @@
+{
+  "timestamp": "20260601_103226",
+  "files_moved": 173,
+  "errors": 0,
+  "moves": [
+    {
+      "file": "00_DOCUMENTATION_INDEX.py",
+      "destination": "docs/indexes"
+    },
+    {
+      "file": "ADVANCED_STRATEGIES_BACKTEST_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "aggressive_cleanup.py",
+      "destination": "other"
+    },
+    {
+      "file": "ai_deployment_production.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_feature_engineering.log",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_integration_examples.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_integration_guide.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "AI_INTEGRATION_QUICK_START.txt",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "AI_INTEGRATION_SUMMARY.txt",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_sentiment_analysis.log",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_sentiment_analyzer.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_signal_model.log",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "AI_SUMMARY.txt",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ai_trading_engine.py",
+      "destination": "trading"
+    },
+    {
+      "file": "analyze_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "analyze_signals.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_breeze_RELIND_20260531_130237.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_breeze_RELIND_20260601_075016.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_breeze_TCS_20260531_130239.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_breeze_TCS_20260601_075018.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_market_filter_results.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_optimized.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_output.txt",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_profit_booking.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_profit_booking_breeze.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_profit_booking_breeze_20260601_094000.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_profit_booking_breeze_20260601_094631.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_profit_booking_breeze_20260601_094707.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_profit_booking_breeze_20260601_094947.json",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_real_or_simulated.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_results.png",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "BACKTEST_RESULTS_SUMMARY.txt",
+      "destination": "data/backtest_results"
+    },
+    {
+      "file": "backtest_simulated.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_summary_report.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_with_breeze_real_data.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "backtest_with_market_filter.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "BSEScripMaster.txt",
+      "destination": "data/config"
+    },
+    {
+      "file": "CDNSEScripMaster.txt",
+      "destination": "data/config"
+    },
+    {
+      "file": "check_api_structure.py",
+      "destination": "setup"
+    },
+    {
+      "file": "check_external_ip.py",
+      "destination": "setup"
+    },
+    {
+      "file": "check_master_format.py",
+      "destination": "setup"
+    },
+    {
+      "file": "check_nse_format.py",
+      "destination": "setup"
+    },
+    {
+      "file": "cleanup_repo.py",
+      "destination": "other"
+    },
+    {
+      "file": "CLEANUP_REPORT_20260601_102111.json",
+      "destination": "docs/cleanup_reports"
+    },
+    {
+      "file": "CLEANUP_REPORT_20260601_102628.json",
+      "destination": "docs/cleanup_reports"
+    },
+    {
+      "file": "CODE_SNIPPETS_REFERENCE.py",
+      "destination": "other"
+    },
+    {
+      "file": "complete_api_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "COMPLETION_SUMMARY.py",
+      "destination": "docs/summaries"
+    },
+    {
+      "file": "COMPREHENSIVE_BACKTEST_PER_TRADE.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "COMPREHENSIVE_BACKTEST_PER_TRADE_RESULTS.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "COMPREHENSIVE_BACKTEST_PER_TRADE_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "COMPREHENSIVE_BACKTEST_RESULTS.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "COMPREHENSIVE_BACKTEST_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "COMPREHENSIVE_BACKTEST_WITH_BREEZE.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "CORRECTED_INTEGRATED_STRATEGY_TEST.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "CORRECTED_INTEGRATED_STRATEGY_TEST_V2.py",
+      "destination": "other"
+    },
+    {
+      "file": "CORRECTED_TEST_RESULTS.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "CORRECTED_TEST_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "CORRECTED_TEST_RESULTS_V2.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "CORRECTED_TEST_RESULTS_V2.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "create_optimization_report.py",
+      "destination": "analysis"
+    },
+    {
+      "file": "create_production_solution.py",
+      "destination": "analysis"
+    },
+    {
+      "file": "debug_headers.py",
+      "destination": "other"
+    },
+    {
+      "file": "DELIVERABLES_MANIFEST.py",
+      "destination": "docs/indexes"
+    },
+    {
+      "file": "deploy.sh",
+      "destination": "scripts"
+    },
+    {
+      "file": "detailed_breeze_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "diagnose_backtest_setup.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "direct_breeze_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "download_security_master.py",
+      "destination": "setup"
+    },
+    {
+      "file": "enhanced_backtest_with_breeze.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "ENHANCED_SIGNAL_IMPLEMENTATION_GUIDE.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "ENHANCED_SIGNAL_QUICK_START.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "experiment_stoch_rsi.py",
+      "destination": "other"
+    },
+    {
+      "file": "final_api_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "final_assessment.py",
+      "destination": "docs/summaries"
+    },
+    {
+      "file": "final_summary.py",
+      "destination": "docs/summaries"
+    },
+    {
+      "file": "fix_ip_mismatch_issue.py",
+      "destination": "setup"
+    },
+    {
+      "file": "fix_portfolio_issue.py",
+      "destination": "setup"
+    },
+    {
+      "file": "FOBSEScripMaster.txt",
+      "destination": "data/config"
+    },
+    {
+      "file": "FONSEScripMaster.txt",
+      "destination": "data/config"
+    },
+    {
+      "file": "get_breeze_session_token.py",
+      "destination": "setup"
+    },
+    {
+      "file": "get_fresh_session_token.py",
+      "destination": "setup"
+    },
+    {
+      "file": "get_primary_ip_for_icici.py",
+      "destination": "setup"
+    },
+    {
+      "file": "get_session_token.py",
+      "destination": "setup"
+    },
+    {
+      "file": "icici_ip_registration_guide.py",
+      "destination": "docs/guides"
+    },
+    {
+      "file": "icici_ip_update_checklist.txt",
+      "destination": "other"
+    },
+    {
+      "file": "implementation_summary.py",
+      "destination": "docs/summaries"
+    },
+    {
+      "file": "INDEX_AI_TRADING_WITH_SENTIMENT.txt",
+      "destination": "other"
+    },
+    {
+      "file": "integrated_advanced_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "integrated_ai_trading_system.py",
+      "destination": "trading"
+    },
+    {
+      "file": "INTEGRATED_STRATEGY_ANALYSIS_REPORT.txt",
+      "destination": "other"
+    },
+    {
+      "file": "INTEGRATED_STRATEGY_TEST.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "INTEGRATED_TEST_RESULTS.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "INTEGRATED_TEST_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "INTEGRATION_CHECKLIST.py",
+      "destination": "setup"
+    },
+    {
+      "file": "integration_validation.py",
+      "destination": "setup"
+    },
+    {
+      "file": "monitor.py",
+      "destination": "trading"
+    },
+    {
+      "file": "MULTI_MODEL_QUICK_EXAMPLES.py",
+      "destination": "docs/guides"
+    },
+    {
+      "file": "multi_model_trading_system.py",
+      "destination": "trading"
+    },
+    {
+      "file": "mybreeze.db",
+      "destination": "data/config"
+    },
+    {
+      "file": "network_analysis.py",
+      "destination": "analysis"
+    },
+    {
+      "file": "network_config.json",
+      "destination": "data/config"
+    },
+    {
+      "file": "network_config_20251107_092340.json",
+      "destination": "data/config"
+    },
+    {
+      "file": "network_connectivity_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "nse_sample.txt",
+      "destination": "other"
+    },
+    {
+      "file": "NSEScripMaster.txt",
+      "destination": "data/config"
+    },
+    {
+      "file": "official_api_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "phase1_backtest_output.txt",
+      "destination": "logs"
+    },
+    {
+      "file": "phase1_remediation_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "portfolio_probe.py",
+      "destination": "other"
+    },
+    {
+      "file": "POSITION_TRACKING_INTEGRATION.py",
+      "destination": "setup"
+    },
+    {
+      "file": "POSITION_TRACKING_SYSTEM.py",
+      "destination": "other"
+    },
+    {
+      "file": "production_api_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "production_readiness_suite.py",
+      "destination": "other"
+    },
+    {
+      "file": "project_structure.txt",
+      "destination": "logs"
+    },
+    {
+      "file": "QUICK_START_README.txt",
+      "destination": "docs/guides"
+    },
+    {
+      "file": "raw_api_test.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "real_data_integration_example.py",
+      "destination": "setup"
+    },
+    {
+      "file": "run_advanced_strategies_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "RUN_ALL_4_STEPS.py",
+      "destination": "trading"
+    },
+    {
+      "file": "run_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "run_backtest_real_data.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "run_breeze_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "run_integrated_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "run_live_trading_system.py",
+      "destination": "trading"
+    },
+    {
+      "file": "run_paper_trader.py",
+      "destination": "trading"
+    },
+    {
+      "file": "RUN_PHASE_8_QUICK_START.ps1",
+      "destination": "scripts"
+    },
+    {
+      "file": "RUN_PHASE_8_QUICK_START.sh",
+      "destination": "trading"
+    },
+    {
+      "file": "safety_state.json",
+      "destination": "data/config"
+    },
+    {
+      "file": "SecurityMaster.zip",
+      "destination": "data/config"
+    },
+    {
+      "file": "SESSION_COMPLETION_SUMMARY.txt",
+      "destination": "logs"
+    },
+    {
+      "file": "setup_breeze_backtest.py",
+      "destination": "backtest"
+    },
+    {
+      "file": "setup_sentiment_analysis.py",
+      "destination": "ai_ml"
+    },
+    {
+      "file": "SIMPLIFIED_STRATEGY_TEST.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "SIMPLIFIED_TEST_RESULTS.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "SIMPLIFIED_TEST_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "START_HERE.txt",
+      "destination": "docs/guides"
+    },
+    {
+      "file": "start_unix.sh",
+      "destination": "scripts"
+    },
+    {
+      "file": "start_windows.bat",
+      "destination": "scripts"
+    },
+    {
+      "file": "STARTUP_GUIDE.txt",
+      "destination": "docs/guides"
+    },
+    {
+      "file": "static_ip_guide.txt",
+      "destination": "docs/guides"
+    },
+    {
+      "file": "static_ip_solutions.py",
+      "destination": "other"
+    },
+    {
+      "file": "strategy_comparison_results.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "strategy_refinement.log",
+      "destination": "logs"
+    },
+    {
+      "file": "strategy_refinement_and_ai.py",
+      "destination": "other"
+    },
+    {
+      "file": "strategy_summary.py",
+      "destination": "docs/summaries"
+    },
+    {
+      "file": "strategy_validation.log",
+      "destination": "logs"
+    },
+    {
+      "file": "SYSTEM_ARCHITECTURE_DIAGRAMS.py",
+      "destination": "other"
+    },
+    {
+      "file": "SYSTEM_READY_SUMMARY.txt",
+      "destination": "logs"
+    },
+    {
+      "file": "test_all_strategies.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_auth_smoke.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_breeze_api.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_breeze_comprehensive.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_breeze_historical.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_cash_flow_manager.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_data_endpoints.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_endpoints_fix.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_fixed_api.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_integration.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_login.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_login_variants.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_market_time_filter.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_multiple_accounts.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_paper_trading.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_paper_trading_simple.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_single_strategy.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "test_stock_data_availability.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "ultimate_cleanup.py",
+      "destination": "other"
+    },
+    {
+      "file": "ULTIMATE_SIMPLIFIED_TEST.py",
+      "destination": "tests/scripts"
+    },
+    {
+      "file": "ULTIMATE_TEST_RESULTS.csv",
+      "destination": "test_results"
+    },
+    {
+      "file": "ULTIMATE_TEST_RESULTS.json",
+      "destination": "test_results"
+    },
+    {
+      "file": "VALIDATION_REPORT.txt",
+      "destination": "other"
+    }
+  ],
+  "remaining_files": [
+    ".env",
+    ".env.example",
+    ".gitignore",
+    "CLEANUP_INDEX.md",
+    "CLEANUP_MASTER_CHECKLIST.md",
+    "CLEANUP_PLAN.md",
+    "CLEANUP_QUICK_REFERENCE.md",
+    "Dockerfile",
+    "POSITION_TRACKING_DETAILED.csv",
+    "POSITION_TRACKING_REPORT.json",
+    "README.md",
+    "breeze_diagnostic_20251107_092804.json",
+    "docker-compose.yml",
+    "enhanced_backtest_RELIND_20260601_075305.json",
+    "enhanced_backtest_RELIND_20260601_075648.json",
+    "enhanced_backtest_TCS_20260601_075307.json",
+    "enhanced_backtest_TCS_20260601_075650.json",
+    "integrated_advanced_backtest_20260601_081039.json",
+    "integrated_advanced_backtest_20260601_081141.json",
+    "integrated_advanced_backtest_20260601_083430.json",
+    "integrated_advanced_backtest_20260601_084043.json",
+    "integrated_advanced_backtest_20260601_085254.json",
+    "integrated_advanced_backtest_20260601_085537.json",
+    "integrated_advanced_backtest_20260601_085622.json",
+    "integrated_advanced_backtest_20260601_085720.json",
+    "integrated_advanced_backtest_20260601_085813.json",
+    "integrated_advanced_backtest_20260601_085917.json",
+    "integrated_backtest_analysis.png",
+    "phase1_remediation_backtest_20260601_091057.json",
+    "production_readiness_report.json",
+    "requirements.txt",
+    "run.py",
+    "setup.py"
+  ]
+}

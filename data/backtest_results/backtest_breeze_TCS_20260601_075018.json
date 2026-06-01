@@ -1,0 +1,493 @@
+{
+  "stock_code": "TCS",
+  "start_date": "2025-09-22",
+  "end_date": "2026-05-29",
+  "initial_capital": 300000,
+  "final_capital": 300000,
+  "total_return": 0.0,
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0,
+  "avg_win": 0,
+  "avg_loss": 0,
+  "max_drawdown": 0.0,
+  "sharpe_ratio": 0,
+  "entry_blocks": 50,
+  "gap_skips": 0,
+  "trades": [],
+  "portfolio_values": [
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000,
+    300000
+  ],
+  "entry_blocks_detail": [
+    {
+      "date": "2025-10-21 12:10:00",
+      "price": 3006.7,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-23 12:10:00",
+      "price": 3073.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-24 12:10:00",
+      "price": 3063.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-27 12:10:00",
+      "price": 3084.9,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-28 12:10:00",
+      "price": 3057.9,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-29 12:10:00",
+      "price": 3057.6,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-30 12:10:00",
+      "price": 3035.3,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-10-31 12:10:00",
+      "price": 3058.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-10 12:11:00",
+      "price": 3025.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-11 12:11:00",
+      "price": 3047.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-12 12:11:00",
+      "price": 3131.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-13 12:11:00",
+      "price": 3105.7,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-14 12:11:00",
+      "price": 3106.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-17 12:11:00",
+      "price": 3102.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-18 12:11:00",
+      "price": 3087.1,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-19 12:11:00",
+      "price": 3147.7,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-20 12:11:00",
+      "price": 3144.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-21 12:11:00",
+      "price": 3150.6,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-24 12:11:00",
+      "price": 3141.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-25 12:11:00",
+      "price": 3119.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-11-28 12:11:00",
+      "price": 3137.5,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-01 12:12:00",
+      "price": 3133.4,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-02 12:12:00",
+      "price": 3135.7,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-03 12:12:00",
+      "price": 3180.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-09 12:12:00",
+      "price": 3208.3,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-10 12:12:00",
+      "price": 3189.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-11 12:12:00",
+      "price": 3191.9,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-12 12:12:00",
+      "price": 3220.5,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-16 12:12:00",
+      "price": 3205.1,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-17 12:12:00",
+      "price": 3217.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-24 12:12:00",
+      "price": 3319.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-26 12:12:00",
+      "price": 3280.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-29 12:12:00",
+      "price": 3251.5,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2025-12-30 12:12:00",
+      "price": 3246.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-01-02 12:01:00",
+      "price": 3250.7,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-01-06 12:01:00",
+      "price": 3255.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-01-07 12:01:00",
+      "price": 3295.6,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-01-13 12:01:00",
+      "price": 3268.0,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-02-03 12:02:00",
+      "price": 3225.3,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-02 12:04:00",
+      "price": 2450.7,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-06 12:04:00",
+      "price": 2473.9,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-07 12:04:00",
+      "price": 2539.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-08 12:04:00",
+      "price": 2559.2,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-10 12:04:00",
+      "price": 2524.3,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-13 12:04:00",
+      "price": 2472.6,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-15 12:04:00",
+      "price": 2554.9,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-16 12:04:00",
+      "price": 2576.9,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-17 12:04:00",
+      "price": 2581.5,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-22 12:04:00",
+      "price": 2538.5,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    },
+    {
+      "date": "2026-04-23 12:04:00",
+      "price": 2521.8,
+      "session": "closed",
+      "reason": "Avoided entry during closed"
+    }
+  ],
+  "gap_skips_detail": []
+}

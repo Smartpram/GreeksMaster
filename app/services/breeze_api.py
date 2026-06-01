@@ -21,13 +21,45 @@ class BreezeAPIService:
         self.secret_key = self.config.BREEZE_SECRET_KEY
         self.session_token = self.config.BREEZE_SESSION_TOKEN
         self.user_id = self.config.BREEZE_USER_ID
+        self.password = getattr(self.config, 'BREEZE_PASSWORD', None)
         self.base_url = "https://api.icicidirect.com/breezeapi/api/v1"
         self.authenticated_session_token = None
         self.user_info = None
         self.is_connected = False
+    
+    def login(self, user_id: Optional[str] = None, password: Optional[str] = None) -> Dict[str, Union[bool, str, Dict]]:
+        """Get login URL for obtaining session token.
+        
+        According to ICICI Direct Breeze API documentation, session tokens are obtained via web login:
+        https://api.icicidirect.com/apiuser/login?api_key=YOUR_API_KEY
+        
+        This method provides instructions for obtaining a fresh session token.
+        
+        Returns:
+            Dictionary with login URL and instructions
+        """
+        import urllib.parse
+        
+        try:
+            # Encode API key for URL
+            encoded_api_key = urllib.parse.quote_plus(self.api_key)
+            login_url = f"https://api.icicidirect.com/apiuser/login?api_key={encoded_api_key}"
+            
+            logger.info("Session token should be obtained from web login")
+            
+            return {
+                'success': True,
+                'login_url': login_url,
+                'instructions': 'Visit the login URL in your browser, authenticate, and copy the session token provided',
+                'note': 'Session tokens expire after inactivity. Refresh them by visiting the login URL again.'
+            }
+            
+        except Exception as e:
+            logger.error(f"Login URL generation exception: {e}")
+            return {'success': False, 'error': str(e)}
         
     def authenticate(self) -> Dict[str, Union[bool, str, Dict]]:
-        """Authenticate with Breeze API using working implementation"""
+        """Authenticate with Breeze API using session token from web login"""
         try:
             url = f"{self.base_url}/customerdetails"
             
@@ -61,7 +93,19 @@ class BreezeAPIService:
                     }
                 else:
                     error_msg = data.get('Error', 'Unknown error')
-                    logger.error(f"Authentication failed: {error_msg}")
+                    logger.warning(f"Authentication failed with session token: {error_msg}")
+                    
+                    # If session token is invalid, provide login URL
+                    if 'Resource not available' in error_msg or error_msg == 'Resource not available.':
+                        logger.info("Session token may be expired. Get a fresh one from web login.")
+                        login_info = self.login()
+                        return {
+                            'success': False, 
+                            'error': error_msg,
+                            'login_url': login_info.get('login_url'),
+                            'instructions': login_info.get('instructions')
+                        }
+                    
                     return {'success': False, 'error': error_msg}
             else:
                 error_msg = f'HTTP {response.status_code}: {response.text}'
@@ -98,10 +142,8 @@ class BreezeAPIService:
         
         # Handle different data types
         if isinstance(post_data, dict):
-            if post_data:  # Only stringify if dict is not empty
-                post_data_str = json.dumps(post_data, separators=(',', ':'))
-            else:
-                post_data_str = ""
+            # Always stringify dicts to JSON, even if empty
+            post_data_str = json.dumps(post_data, separators=(',', ':'))
         else:
             post_data_str = str(post_data) if post_data else ""
         
@@ -148,10 +190,12 @@ class BreezeAPIService:
         
         try:
             url = f"{self.base_url}/dematholdings"
-            # For endpoints that don't require body parameters, send without JSON
-            headers = self.get_headers("")
             
-            response = requests.get(url, headers=headers, timeout=30)
+            # Send empty dict as payload
+            payload = {}
+            headers = self.get_headers(payload)
+            
+            response = requests.get(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 200:
                 data = response.json()
@@ -178,10 +222,12 @@ class BreezeAPIService:
         
         try:
             url = f"{self.base_url}/portfoliopositions"
-            # For endpoints that don't require body parameters, send without JSON
-            headers = self.get_headers("")
             
-            response = requests.get(url, headers=headers, timeout=30)
+            # Send empty dict as payload
+            payload = {}
+            headers = self.get_headers(payload)
+            
+            response = requests.get(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 200:
                 data = response.json()
@@ -208,20 +254,17 @@ class BreezeAPIService:
         
         try:
             url = f"{self.base_url}/funds"
-            # Build payload only when account-specific params are provided
+            # Build payload - always send as dict
             payload = {}
             if ucc:
                 payload['ucc'] = ucc
             if demat:
                 payload['demat'] = demat
 
-            # Calculate headers and perform request
-            headers = self.get_headers(payload if payload else "")
+            # Calculate headers with the payload
+            headers = self.get_headers(payload)
 
-            if payload:
-                response = requests.get(url, json=payload, headers=headers, timeout=30)
-            else:
-                response = requests.get(url, headers=headers, timeout=30)
+            response = requests.get(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 200:
                 data = response.json()
@@ -487,50 +530,85 @@ class BreezeAPIService:
             return {'success': False, 'error': str(e)}
     
     def get_historical_data(self, stock_code: str, exchange_code: str = "NSE", 
-                          product_type: str = "cash", interval: str = "1day", 
-                          days_back: int = 30) -> Dict:
-        """Get historical data for backtesting (note: may need additional work for full functionality)"""
+                          product_type: str = "cash", interval: str = "day", 
+                          from_date: str = None, to_date: str = None,
+                          days_back: int = None, expiry_date: str = None,
+                          right: str = None, strike_price: str = None) -> Dict:
+        """Get historical data for backtesting using Breeze API format
+        
+        Args:
+            stock_code: Stock symbol (e.g., 'RELIND', 'NIFTY')
+            exchange_code: 'NSE' for equity, 'NFO' for futures/options
+            product_type: 'cash' for equity, 'futures' or 'options' for derivatives
+            interval: 'minute', '5minute', '30minute', 'day' (NOT '1minute', '1day', etc.)
+            from_date: ISO 8601 format (e.g., '2025-02-03T09:20:00.000Z'). Auto-calculated if days_back provided.
+            to_date: ISO 8601 format (e.g., '2025-02-03T09:22:00.000Z'). Defaults to now.
+            days_back: Alternative to from_date - number of days to go back
+            expiry_date: For options/futures - expiry date (e.g., '2025-02-06T07:00:00.000Z')
+            right: For options - 'call' or 'put'
+            strike_price: For options - strike price value
+        
+        Returns:
+            Dict with 'success' and 'data' keys
+        """
         if not self.is_authenticated():
             return {'success': False, 'error': 'Not authenticated'}
         
         try:
+            # Use v2 endpoint for better features (1second interval support)
             url = f"{self.base_url}/historicalcharts"
             
-            # Calculate date range
-            to_date = datetime.now()
-            from_date = to_date - timedelta(days=days_back)
+            # Calculate to_date if not provided
+            if to_date is None:
+                to_date = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.000Z')
             
+            # Calculate from_date if not provided
+            if from_date is None:
+                days = days_back if days_back is not None else 30
+                from_datetime = datetime.now() - timedelta(days=days)
+                from_date = from_datetime.strftime('%Y-%m-%dT%H:%M:%S.000Z')
+            
+            # Build payload based on product type
             payload = {
                 "interval": interval,
-                "from_date": from_date.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
-                "to_date": to_date.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
+                "from_date": from_date,
+                "to_date": to_date,
                 "stock_code": stock_code,
                 "exchange_code": exchange_code,
                 "product_type": product_type
             }
             
-            headers = self.get_headers()
+            # Add optional parameters for options/futures
+            if expiry_date:
+                payload["expiry_date"] = expiry_date
+            if right:
+                payload["right"] = right
+            if strike_price:
+                payload["strike_price"] = strike_price
+            
+            # Convert payload to JSON string for checksum calculation
+            payload_json = json.dumps(payload, separators=(',', ':'))
+            headers = self.get_headers(payload_json)
             
             response = requests.get(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 200:
                 data = response.json()
-                if 'Success' in data:
-                    logger.info(f"Successfully retrieved historical data for {stock_code}")
+                if 'Success' in data and data['Success']:
+                    logger.info(f"✅ Successfully retrieved {len(data.get('Success', []))} bars for {stock_code} ({interval})")
                     return {'success': True, 'data': data['Success']}
                 else:
-                    error_msg = data.get('Error', 'Unknown error')
-                    logger.warning(f"Historical data may need endpoint adjustment: {error_msg}")
-                    # Return empty data for graceful degradation
-                    return {'success': True, 'data': [], 'warning': 'Historical data endpoint needs configuration'}
+                    error_msg = data.get('Error', 'No data returned')
+                    logger.warning(f"⚠️ Historical data response: {error_msg}")
+                    return {'success': False, 'data': [], 'warning': error_msg}
             else:
-                error_msg = f'HTTP {response.status_code}: {response.text[:200]}'
-                logger.warning(f"Historical data endpoint issue: {error_msg}")
-                return {'success': True, 'data': [], 'warning': 'Historical data endpoint needs configuration'}
+                error_msg = f'HTTP {response.status_code}: {response.text[:300]}'
+                logger.warning(f"⚠️ Historical data endpoint error: {error_msg}")
+                return {'success': False, 'data': [], 'error': error_msg}
                 
         except Exception as e:
-            logger.warning(f"Historical data exception: {e}")
-            return {'success': True, 'data': [], 'warning': 'Historical data endpoint needs configuration'}
+            logger.warning(f"⚠️ Historical data exception: {str(e)}")
+            return {'success': False, 'data': [], 'error': str(e)}
     
     def get_margin(self, exchange_code: str = "NSE") -> Dict:
         """Get margin details"""

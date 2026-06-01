@@ -1,0 +1,142 @@
+{
+  "HDFCBANK": {
+    "equity_strategies": {
+      "VCP": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "avg_trade_return": 0.0,
+        "trades": 0
+      },
+      "Order Flow": {
+        "total_return": 0.97,
+        "sharpe_ratio": 4.3,
+        "win_rate": 50.0,
+        "strategy": "Order Flow Microstructure",
+        "trades": 2
+      },
+      "PEAD": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "avg_hold_days": 0,
+        "strategy": "PEAD",
+        "trades": 0
+      },
+      "Pairs Trading": {
+        "total_return": -3.06,
+        "sharpe_ratio": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "pair": "HDFCBANK_ICICIBANK",
+        "strategy": "Pairs Trading",
+        "trades": 1
+      }
+    },
+    "options_strategies": {
+      "Vol Harvesting": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "strategy": "Delta-Neutral Volatility Harvesting",
+        "trades": 0
+      },
+      "Vol Mean Reversion": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "strategy": "Volatility Mean Reversion",
+        "trades": 0
+      },
+      "Gamma Scalping": {
+        "total_return": 13.37,
+        "sharpe_ratio": 15.26,
+        "win_rate": 100.0,
+        "strategy": "Gamma Scalping",
+        "trades": 3,
+        "delta_neutral": true
+      },
+      "Options Momentum": {
+        "total_return": -23.33,
+        "sharpe_ratio": 0,
+        "win_rate": 0.0,
+        "strategy": "Dynamic Options Momentum",
+        "trades": 1,
+        "leveraged": true
+      }
+    },
+    "data_bars": 90,
+    "price_range": "74.96 - 100.00"
+  },
+  "ICICIBANK": {
+    "equity_strategies": {
+      "VCP": {
+        "total_return": 6.92,
+        "sharpe_ratio": 0,
+        "win_rate": 100.0,
+        "profit_factor": 1.0,
+        "avg_trade_return": 6.92,
+        "trades": 1,
+        "pattern": "VCP"
+      },
+      "Order Flow": {
+        "total_return": -1.55,
+        "sharpe_ratio": -5.95,
+        "win_rate": 33.33,
+        "strategy": "Order Flow Microstructure",
+        "trades": 3
+      },
+      "PEAD": {
+        "total_return": 5.83,
+        "sharpe_ratio": 0,
+        "win_rate": 100.0,
+        "avg_hold_days": 15.0,
+        "strategy": "Post-Earnings Announcement Drift",
+        "trades": 1
+      },
+      "Pairs Trading": {
+        "total_return": -3.06,
+        "sharpe_ratio": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "pair": "HDFCBANK_ICICIBANK",
+        "strategy": "Pairs Trading",
+        "trades": 1
+      }
+    },
+    "options_strategies": {
+      "Vol Harvesting": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "strategy": "Delta-Neutral Volatility Harvesting",
+        "trades": 0
+      },
+      "Vol Mean Reversion": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "strategy": "Volatility Mean Reversion",
+        "trades": 0
+      },
+      "Gamma Scalping": {
+        "total_return": 32.57,
+        "sharpe_ratio": 31.87,
+        "win_rate": 100.0,
+        "strategy": "Gamma Scalping",
+        "trades": 3,
+        "delta_neutral": true
+      },
+      "Options Momentum": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "strategy": "Dynamic Options Momentum",
+        "trades": 0
+      }
+    },
+    "data_bars": 90,
+    "price_range": "100.00 - 137.06"
+  }
+}

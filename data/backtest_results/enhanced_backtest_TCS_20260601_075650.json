@@ -1,0 +1,345 @@
+{
+  "stock_code": "TCS",
+  "period": {
+    "start": "2025-09-22",
+    "end": "2026-05-29",
+    "bars": 168
+  },
+  "capital": {
+    "initial": 300000,
+    "final": 281085.50000000006,
+    "pnl": -18914.49999999994,
+    "return_pct": -6.304833333333313
+  },
+  "trades": {
+    "total": 18,
+    "winning": 8,
+    "losing": 10,
+    "win_rate": 44.44444444444444,
+    "avg_win": 2226.1500000000015,
+    "avg_loss": -3672.3699999999953,
+    "profit_factor": 0.4849511350980439
+  },
+  "risk": {
+    "max_drawdown": -8.41803316902254,
+    "sharpe_ratio": -1.4336957828243757
+  },
+  "trades_detail": [
+    {
+      "entry_date": "2026-01-05 12:01:00",
+      "entry_price": 3216.1,
+      "entry_score": 0.615,
+      "exit_date": "2026-01-06 12:01:00",
+      "exit_price": 3255.8,
+      "shares": 88,
+      "pnl": 3493.600000000035,
+      "pnl_pct": 1.2344143527875462,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-01-08 12:01:00",
+      "entry_price": 3203.9,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-01-09 12:01:00",
+      "exit_price": 3207.8,
+      "shares": 89,
+      "pnl": 347.0999999999767,
+      "pnl_pct": 0.12172664565061615,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-01-13 12:01:00",
+      "entry_price": 3268.0,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-01-14 12:01:00",
+      "exit_price": 3192.5,
+      "shares": 88,
+      "pnl": -6644.0,
+      "pnl_pct": -2.3102815177478577,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "STOP_LOSS (-2%)"
+    },
+    {
+      "entry_date": "2026-01-16 12:01:00",
+      "entry_price": 3206.7,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-01-19 12:01:00",
+      "exit_price": 3163.6,
+      "shares": 88,
+      "pnl": -3792.7999999999884,
+      "pnl_pct": -1.3440608725480996,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-01-20 12:01:00",
+      "entry_price": 3102.3,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-01-21 12:01:00",
+      "exit_price": 3122.6,
+      "shares": 89,
+      "pnl": 1806.6999999999534,
+      "pnl_pct": 0.6543532218031695,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-01-27 12:01:00",
+      "entry_price": 3158.0,
+      "entry_score": 0.615,
+      "exit_date": "2026-01-28 12:01:00",
+      "exit_price": 3200.1,
+      "shares": 88,
+      "pnl": 3704.7999999999884,
+      "pnl_pct": 1.3331222292590217,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-01-30 12:01:00",
+      "entry_price": 3123.9,
+      "entry_score": 0.615,
+      "exit_date": "2026-02-01 12:02:00",
+      "exit_price": 3186.9,
+      "shares": 90,
+      "pnl": 5670.0,
+      "pnl_pct": 2.016709881878421,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-02-04 12:02:00",
+      "entry_price": 2999.1,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-02-05 12:02:00",
+      "exit_price": 2991.5,
+      "shares": 96,
+      "pnl": -729.5999999999767,
+      "pnl_pct": -0.25340935614017235,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-02-06 12:02:00",
+      "entry_price": 2941.6,
+      "entry_score": 0.615,
+      "exit_date": "2026-02-09 12:02:00",
+      "exit_price": 2948.2,
+      "shares": 98,
+      "pnl": 646.7999999999884,
+      "pnl_pct": 0.22436769105248533,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-02-12 12:02:00",
+      "entry_price": 2750.1,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-02-13 12:02:00",
+      "exit_price": 2692.2,
+      "shares": 105,
+      "pnl": -6079.5,
+      "pnl_pct": -2.1053779862550486,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "STOP_LOSS (-2%)"
+    },
+    {
+      "entry_date": "2026-02-23 12:02:00",
+      "entry_price": 2676.3,
+      "entry_score": 0.615,
+      "exit_date": "2026-02-24 12:02:00",
+      "exit_price": 2573.7,
+      "shares": 105,
+      "pnl": -10773.0,
+      "pnl_pct": -3.8336509359937363,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "STOP_LOSS (-2%)"
+    },
+    {
+      "entry_date": "2026-02-27 12:02:00",
+      "entry_price": 2637.4,
+      "entry_score": 0.615,
+      "exit_date": "2026-03-02 12:03:00",
+      "exit_price": 2613.5,
+      "shares": 103,
+      "pnl": -2461.7000000000116,
+      "pnl_pct": -0.9061954955638163,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-03-16 12:03:00",
+      "entry_price": 2409.2,
+      "entry_score": 0.615,
+      "exit_date": "2026-03-17 12:03:00",
+      "exit_price": 2391.7,
+      "shares": 112,
+      "pnl": -1960.0,
+      "pnl_pct": -0.7263822015606841,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-04-27 12:04:00",
+      "entry_price": 2447.6,
+      "entry_score": 0.615,
+      "exit_date": "2026-04-28 12:04:00",
+      "exit_price": 2444.7,
+      "shares": 109,
+      "pnl": -316.0999999999767,
+      "pnl_pct": -0.1184834123222786,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-05-07 12:05:00",
+      "entry_price": 2401.4,
+      "entry_score": 0.615,
+      "exit_date": "2026-05-08 12:05:00",
+      "exit_price": 2394.4,
+      "shares": 111,
+      "pnl": -777.0,
+      "pnl_pct": -0.2914966269676022,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-05-12 12:05:00",
+      "entry_price": 2300.3,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-05-13 12:05:00",
+      "exit_price": 2272.8,
+      "shares": 116,
+      "pnl": -3190.0,
+      "pnl_pct": -1.195496239620919,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-05-14 12:05:00",
+      "entry_price": 2246.0,
+      "entry_score": 0.615,
+      "exit_date": "2026-05-15 12:05:00",
+      "exit_price": 2264.0,
+      "shares": 117,
+      "pnl": 2106.0,
+      "pnl_pct": 0.8014247551202136,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    },
+    {
+      "entry_date": "2026-05-19 12:05:00",
+      "entry_price": 2327.1,
+      "entry_score": 0.6599999999999999,
+      "exit_date": "2026-05-20 12:05:00",
+      "exit_price": 2327.4,
+      "shares": 114,
+      "pnl": 34.20000000006985,
+      "pnl_pct": 0.012891581797094319,
+      "regime_at_entry": "unknown",
+      "regime_at_exit": "unknown",
+      "exit_reason": "SIGNAL_DEGRADATION"
+    }
+  ],
+  "regime_history": [
+    {
+      "date": "2026-04-30 12:04:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-04 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-05 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-06 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-07 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-08 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-11 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-12 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-13 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-14 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-15 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-18 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-19 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-20 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-21 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-22 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-25 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-26 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-27 12:05:00",
+      "regime": "unknown"
+    },
+    {
+      "date": "2026-05-29 12:05:00",
+      "regime": "unknown"
+    }
+  ]
+}

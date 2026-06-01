@@ -1,0 +1,19 @@
+Strategy,Trades,Return %,Win Rate %,Sharpe,Category
+Aggressive RSI,11,15.76,81.8,12.91,Refined
+Oversold Bounce (RSI),4,12.92,75.0,20.29,Library
+Dynamic Parameters,12,11.37,58.3,8.27,Refined
+Stochastic Reversal,13,6.8,76.9,5.49,Library
+Bollinger Bands Reversal,7,6.25,71.4,8.09,Library
+Ensemble Confirmation,204,5.02,8.8,0.83,Refined
+MACD Crossover Refined,20,4.41,60.0,2.26,Refined
+Simple Moving Average (SMA50),18,3.97,27.8,1.69,Library
+Multi-Timeframe Trend,4,2.57,50.0,7.59,Refined
+Higher Highs/Lows,0,0.0,0.0,0.0,Library
+Support/Resistance Bounce,0,0.0,0.0,0.0,Library
+Narrow Range Breakout,0,0.0,0.0,0.0,Library
+EMA Crossover (12/26),9,-0.08,22.2,-0.04,Library
+MACD Momentum,20,-1.23,45.0,-0.64,Library
+Keltner Channel Breakout,13,-3.99,30.8,-2.5,Library
+Volatility Breakout,13,-3.99,30.8,-2.5,Library
+RSI Momentum,32,-4.12,34.4,-1.44,Library
+Price Acceleration,25,-4.28,32.0,-2.29,Library
