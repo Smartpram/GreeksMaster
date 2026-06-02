@@ -1,0 +1,185 @@
+{
+  "test_date": "2026-06-01T12:05:35.675760",
+  "start_date": "2024-06-01",
+  "end_date": "2026-02-01",
+  "initial_capital": 100000,
+  "tickers_tested": [],
+  "summary": {
+    "total_tickers": 0,
+    "successful_tickers": 0,
+    "avg_return": 0,
+    "avg_win_rate": 0,
+    "total_trades": 0,
+    "total_winners": 0
+  },
+  "details": [
+    {
+      "ticker": "MARUTI",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BAJAJFINSV",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "EICHER",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "M&M",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "CIPLA",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "DRREDDY",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "DIVISLAB",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "LUPIN",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "ITC",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "NESTLEIND",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BRITANNIA",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "MARICO",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "RELIANCE",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BPCL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "NTPC",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "POWERGRID",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "ADANIPORTS",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "TATASTEEL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "JSWSTEEL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BHARTIARTL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    }
+  ]
+}

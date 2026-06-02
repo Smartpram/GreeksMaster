@@ -13,19 +13,25 @@ from app.config import Config
 logger = logging.getLogger(__name__)
 
 class BreezeAPIService:
-    """Production-ready Breeze API service with working authentication"""
+    """Production-ready Breeze API service for NON-PINS NRO account (algo trading)"""
     
     def __init__(self):
+        """Initialize Breeze API service for NON-PINS NRO account"""
         self.config = Config()
         self.api_key = self.config.BREEZE_API_KEY
         self.secret_key = self.config.BREEZE_SECRET_KEY
+        
+        # Use single account configuration
         self.session_token = self.config.BREEZE_SESSION_TOKEN
         self.user_id = self.config.BREEZE_USER_ID
-        self.password = getattr(self.config, 'BREEZE_PASSWORD', None)
+        self.password = self.config.BREEZE_PASSWORD
+        
         self.base_url = "https://api.icicidirect.com/breezeapi/api/v1"
         self.authenticated_session_token = None
         self.user_info = None
         self.is_connected = False
+        
+        logger.info(f"BreezeAPIService initialized for NON-PINS NRO account (User: {self.user_id})")
     
     def login(self, user_id: Optional[str] = None, password: Optional[str] = None) -> Dict[str, Union[bool, str, Dict]]:
         """Get login URL for obtaining session token.

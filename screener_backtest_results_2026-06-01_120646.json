@@ -1,0 +1,175 @@
+{
+  "test_date": "2026-06-01T12:06:15.051134",
+  "start_date": "2024-06-01",
+  "end_date": "2026-02-01",
+  "initial_capital": 100000,
+  "tickers_tested": [],
+  "summary": {
+    "total_tickers": 0,
+    "successful_tickers": 0,
+    "avg_return": 0,
+    "avg_win_rate": 0,
+    "total_trades": 0,
+    "total_winners": 0
+  },
+  "details": [
+    {
+      "ticker": "MARUTI",
+      "status": "ERROR",
+      "error": "ufunc 'subtract' did not contain a loop with signature matching types (dtype('<U7'), dtype('float64')) -> None",
+      "trades": 0
+    },
+    {
+      "ticker": "BAJAJFINSV",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "EICHER",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "M&M",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "CIPLA",
+      "status": "ERROR",
+      "error": "ufunc 'subtract' did not contain a loop with signature matching types (dtype('<U7'), dtype('float64')) -> None",
+      "trades": 0
+    },
+    {
+      "ticker": "DRREDDY",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "DIVISLAB",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "LUPIN",
+      "status": "ERROR",
+      "error": "ufunc 'subtract' did not contain a loop with signature matching types (dtype('<U6'), dtype('float64')) -> None",
+      "trades": 0
+    },
+    {
+      "ticker": "ITC",
+      "status": "ERROR",
+      "error": "ufunc 'subtract' did not contain a loop with signature matching types (dtype('<U6'), dtype('float64')) -> None",
+      "trades": 0
+    },
+    {
+      "ticker": "NESTLEIND",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BRITANNIA",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "MARICO",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "RELIANCE",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BPCL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "NTPC",
+      "status": "ERROR",
+      "error": "ufunc 'subtract' did not contain a loop with signature matching types (dtype('<U6'), dtype('float64')) -> None",
+      "trades": 0
+    },
+    {
+      "ticker": "POWERGRID",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "ADANIPORTS",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "TATASTEEL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "JSWSTEEL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    },
+    {
+      "ticker": "BHARTIARTL",
+      "status": "NO_DATA",
+      "trades": 0,
+      "return_pct": 0,
+      "win_rate": 0,
+      "trades_list": []
+    }
+  ]
+}

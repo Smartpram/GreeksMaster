@@ -1,0 +1,143 @@
+{
+  "test_date": "2026-06-01T11:57:28.396031",
+  "start_date": "2024-06-01",
+  "end_date": "2026-02-01",
+  "initial_capital": 100000,
+  "tickers_tested": [],
+  "summary": {
+    "total_tickers": 0,
+    "successful_tickers": 0,
+    "avg_return": 0,
+    "avg_win_rate": 0,
+    "total_trades": 0,
+    "total_winners": 0
+  },
+  "details": [
+    {
+      "ticker": "MARUTI",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "BAJAJFINSV",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "EICHER",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "M&M",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "CIPLA",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "DRREDDY",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "DIVISLAB",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "LUPIN",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "ITC",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "NESTLEIND",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "BRITANNIA",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "MARICO",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "RELIANCE",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "BPCL",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "NTPC",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "POWERGRID",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "ADANIPORTS",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "TATASTEEL",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "JSWSTEEL",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    },
+    {
+      "ticker": "BHARTIARTL",
+      "status": "ERROR",
+      "error": "'dict' object has no attribute 'empty'",
+      "trades": 0
+    }
+  ]
+}

@@ -16,8 +16,10 @@ class Config:
     # Breeze API settings
     BREEZE_API_KEY = os.getenv('BREEZE_API_KEY')
     BREEZE_SECRET_KEY = os.getenv('BREEZE_SECRET_KEY')
-    BREEZE_SESSION_TOKEN = os.getenv('BREEZE_SESSION_TOKEN')
+    
+    # Breeze Account (NON-PINS NRO only - algo trading only allowed here)
     BREEZE_USER_ID = os.getenv('BREEZE_USER_ID')
+    BREEZE_SESSION_TOKEN = os.getenv('BREEZE_SESSION_TOKEN')
     BREEZE_PASSWORD = os.getenv('BREEZE_PASSWORD')
     
     # Trading settings
@@ -73,9 +75,15 @@ class Config:
         """Validate required configuration"""
         required_fields = [
             'BREEZE_API_KEY',
-            'BREEZE_SECRET_KEY',
-            'BREEZE_USER_ID'
+            'BREEZE_SECRET_KEY'
         ]
+        
+        # Check at least one account is configured
+        pins_configured = cls.BREEZE_USER_ID_PINS and cls.BREEZE_SESSION_TOKEN_PINS
+        non_pins_configured = cls.BREEZE_USER_ID_NON_PINS and cls.BREEZE_SESSION_TOKEN_NON_PINS
+        
+        if not (pins_configured or non_pins_configured):
+            raise ValueError("At least one account (PINS or NON_PINS) must be configured")
         
         missing_fields = []
         for field in required_fields:
