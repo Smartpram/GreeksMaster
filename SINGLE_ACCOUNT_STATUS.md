@@ -9,6 +9,8 @@
 ✅ Removed AccountManager (multi-account logic)
 ✅ Simplified BreezeAPIService constructor
 ✅ Deleted all account/token switching test files
+✅ Added OPTIONS TRADING support (call, put, spreads, straddles)
+✅ Added OPTIONS INTEGRATION module
 ```
 
 ## 📋 Current Configuration
@@ -24,6 +26,9 @@ BREEZE_PASSWORD=Smartpram2@
 
 **Account Type**: NON-PINS NRO Only
 **Reason**: Algorithmic trading is ONLY allowed on NON-PINS NRO accounts
+**Trading Allowed**: 
+  - ✅ Equity/Stocks (SMA20, sentiment gate, range policy)
+  - ✅ Options (calls, puts, spreads, straddles)
 **Single Token**: 55810740 (no token switching)
 **No Account Selection**: All orders go to NON-PINS NRO account
 
@@ -35,6 +40,8 @@ BREEZE_PASSWORD=Smartpram2@
 | `app/config.py` | Removed multi-account logic, uses single credentials |
 | `app/account_manager.py` | DELETED (no longer needed) |
 | `app/services/breeze_api.py` | Removed account_type parameter from constructor |
+| `app/options_strategy.py` | **NEW** - Options trading engine |
+| `app/options_integration.py` | **NEW** - Options integration with main pipeline |
 
 ## 🗑️ Deleted Files
 
@@ -54,10 +61,98 @@ BREEZE_PASSWORD=Smartpram2@
 
 - ✅ Single-account algorithmic trading
 - ✅ NON-PINS NRO account operations only
-- ✅ SMA20 crossover strategy
+- ✅ **NEW: Options trading (calls, puts, spreads, straddles)**
+- ✅ SMA20 crossover strategy (equity)
 - ✅ Range Policy enforcement
 - ✅ Market Sentiment Gate filtering
 - ✅ Production deployment
+
+## 🔄 New Options Features
+
+### `app/options_strategy.py`
+- ✅ Strike selection (ATM, ITM, OTM)
+- ✅ Options Greeks calculation (Black-Scholes)
+  - Delta, Gamma, Theta, Vega, Rho
+- ✅ Expiry management (weekly & monthly)
+- ✅ Position management (create, close, track)
+- ✅ Strategy builders:
+  - Call spreads
+  - Put spreads
+  - Straddles
+- ✅ Time decay (theta) monitoring
+- ✅ Portfolio summary with Greeks
+
+### `app/options_integration.py`
+- ✅ Signal generation (calls, puts, straddles)
+- ✅ Confidence-based strategy selection
+- ✅ Signal execution
+- ✅ Portfolio Greeks aggregation
+- ✅ Risk monitoring:
+  - Delta/Vega limits
+  - Theta decay tracking
+  - Expiry proximity alerts
+- ✅ Comprehensive reporting
+
+## ⚙️ Usage Examples
+
+### Equity Trading (Existing)
+```python
+from app.services.breeze_api import BreezeAPIService
+
+api = BreezeAPIService()
+api.authenticate()
+positions = api.get_portfolio_positions()
+```
+
+### Options Trading (New)
+```python
+from app.options_integration import OptionsIntegration
+
+# Initialize with 30% of capital for options
+integration = OptionsIntegration(capital=500000, max_options_capital_allocation=0.3)
+
+# Generate call signal based on bullish equity signal
+signal = integration.generate_call_signal(
+    symbol='NIFTY',
+    spot_price=22000,
+    equity_signal='BUY',
+    confidence=0.80
+)
+
+# Execute signal
+if signal:
+    integration.execute_options_signal(signal)
+
+# Monitor portfolio
+integration.print_options_summary()
+```
+
+### Options Strategy Examples
+```python
+from app.options_strategy import OptionsTrader
+
+trader = OptionsTrader(capital=500000)
+
+# Build call spread (limited risk, limited reward)
+spreads = trader.build_call_spread(
+    symbol='NIFTY',
+    spot_price=22000,
+    premium_received=150,
+    premium_paid=100,
+    strike_width=100
+)
+
+# Build straddle (profit from volatility)
+straddle = trader.build_straddle(
+    symbol='NIFTY',
+    spot_price=22000,
+    call_premium=250,
+    put_premium=250
+)
+
+# Monitor Greeks
+portfolio_summary = trader.get_portfolio_summary()
+```
 
 ## ⚙️ Usage
 

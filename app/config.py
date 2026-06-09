@@ -17,27 +17,27 @@ class Config:
     BREEZE_API_KEY = os.getenv('BREEZE_API_KEY')
     BREEZE_SECRET_KEY = os.getenv('BREEZE_SECRET_KEY')
     
-    # Breeze Account (NON-PINS NRO only - algo trading only allowed here)
+    # Breeze Account (NON-PINS NRO only - OPTIONS TRADING)
     BREEZE_USER_ID = os.getenv('BREEZE_USER_ID')
     BREEZE_SESSION_TOKEN = os.getenv('BREEZE_SESSION_TOKEN')
     BREEZE_PASSWORD = os.getenv('BREEZE_PASSWORD')
     
-    # Trading settings
+    # Options Trading Settings
     PAPER_TRADING = os.getenv('PAPER_TRADING', 'True').lower() == 'true'
-    DEFAULT_CAPITAL = float(os.getenv('DEFAULT_CAPITAL', '100000'))
-    MAX_POSITION_SIZE = float(os.getenv('MAX_POSITION_SIZE', '0.1'))  # 10% of capital
+    OPTIONS_CAPITAL = float(os.getenv('OPTIONS_CAPITAL', '500000'))
+    MAX_OPTION_POSITION_SIZE = float(os.getenv('MAX_OPTION_POSITION_SIZE', '0.1'))
     
-    # Risk management settings
-    DEFAULT_STOP_LOSS = float(os.getenv('DEFAULT_STOP_LOSS', '0.05'))  # 5%
-    DEFAULT_TARGET = float(os.getenv('DEFAULT_TARGET', '0.15'))  # 15%
-    TRAILING_STOP_LOSS = float(os.getenv('TRAILING_STOP_LOSS', '0.03'))  # 3%
-    MAX_DAILY_LOSS = float(os.getenv('MAX_DAILY_LOSS', '0.02'))  # 2%
+    # Risk Management Settings
+    MAX_DELTA_EXPOSURE = float(os.getenv('MAX_DELTA_EXPOSURE', '0.5'))
+    MAX_VEGA_EXPOSURE = float(os.getenv('MAX_VEGA_EXPOSURE', '2.0'))
+    MAX_THETA_DECAY_PER_DAY = float(os.getenv('MAX_THETA_DECAY_PER_DAY', '-500'))
+    MAX_DAILY_LOSS = float(os.getenv('MAX_DAILY_LOSS', '0.02'))
     
-    # Strategy settings
-    TREND_PERIOD = int(os.getenv('TREND_PERIOD', '20'))
-    RSI_PERIOD = int(os.getenv('RSI_PERIOD', '14'))
-    RSI_OVERBOUGHT = float(os.getenv('RSI_OVERBOUGHT', '70'))
-    RSI_OVERSOLD = float(os.getenv('RSI_OVERSOLD', '30'))
+    # Options Strategy Settings
+    DEFAULT_OPTION_STRATEGY = os.getenv('DEFAULT_OPTION_STRATEGY', 'CALL_SPREAD')
+    PREFERRED_EXPIRY = os.getenv('PREFERRED_EXPIRY', 'WEEKLY')
+    USE_ATM_STRIKES = os.getenv('USE_ATM_STRIKES', 'True').lower() == 'true'
+    SPREAD_WIDTH = float(os.getenv('SPREAD_WIDTH', '100'))
     
     # Database settings (SQLite for simplicity)
     DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///mybreeze.db')
