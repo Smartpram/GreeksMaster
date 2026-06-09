@@ -1,6 +1,6 @@
-# 🚀 MyBreezeApp - Algorithmic Trading Platform
+# 🚀 GreeksMaster - Options Trading Platform
 
-> Advanced algorithmic trading application with intelligent profit booking strategies, real-time portfolio monitoring, and comprehensive risk management through ICICIDirect Breeze API
+> Professional options trading platform with advanced Greeks management, multi-leg spread strategies, and comprehensive risk monitoring through ICICIDirect Breeze API
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-2.3%2B-green)](https://flask.palletsprojects.com)
@@ -26,7 +26,7 @@
 
 ## 🎯 Overview
 
-MyBreezeApp is a sophisticated algorithmic trading platform designed for Indian equity markets. It implements an **integrated decision pipeline** that continuously scans for trading opportunities, validates them against safety guardrails, executes trades with intelligent position sizing, dynamically manages exits based on market conditions, and monitors risk with automatic safeguards.
+GreeksMaster is a professional options trading platform for Indian derivatives markets (NFO - National Futures and Options Exchange). It implements **advanced options strategies** with intelligent Greeks management, multi-leg spread optimization, automated position sizing, dynamic exit management, and comprehensive risk monitoring.
 
 **Current Status**: Trading 4 stocks (TCS, WIPRO, RELIND, MARUTI) using Buy & Hold trend-following with adaptive profit booking.
 

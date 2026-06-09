@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MyBreezeApp Setup and Installation Script
+GreeksMaster Setup and Installation Script
 """
 import os
 import sys
@@ -58,7 +58,7 @@ def create_environment_file():
     """Create .env file with default configuration"""
     print("⚙️  Creating environment configuration...")
     
-    env_content = """# MyBreezeApp Configuration
+    env_content = """# GreeksMaster Configuration
 # Flask Settings
 SECRET_KEY=your-secret-key-change-this-in-production
 DEBUG=True
@@ -297,7 +297,7 @@ flake8>=6.0.0
 def show_completion_message():
     """Show completion message with next steps"""
     print("\n" + "="*60)
-    print("🎉 MyBreezeApp Setup Complete!")
+    print("🎉 GreeksMaster Setup Complete!")
     print("="*60)
     print("\n📋 Next Steps:")
     print("1. Update .env file with your ICICIDirect Breeze API credentials")
@@ -319,7 +319,7 @@ def show_completion_message():
 
 def main():
     """Main setup function"""
-    print("🚀 MyBreezeApp Setup Script")
+    print("🚀 GreeksMaster Setup Script")
     print("="*40)
     
     try:

@@ -1,5 +1,5 @@
 """
-Configuration settings for MyBreezeApp
+Configuration settings for GreeksMaster - Options Trading Platform
 """
 import os
 from dotenv import load_dotenv
