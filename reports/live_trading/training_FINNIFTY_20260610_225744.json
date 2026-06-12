@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-10T22:57:44.521993",
+  "ticker": "FINNIFTY",
+  "models": {
+    "xgboost": {
+      "accuracy": 0.4930555555555556,
+      "precision": 0.5232558139534884,
+      "recall": 0.5844155844155844,
+      "f1": 0.5521472392638037
+    },
+    "rf": {
+      "accuracy": 0.4583333333333333,
+      "precision": 0.4939759036144578,
+      "recall": 0.5324675324675324,
+      "f1": 0.5125
+    },
+    "gb": {
+      "accuracy": 0.4791666666666667,
+      "precision": 0.5121951219512195,
+      "recall": 0.5454545454545454,
+      "f1": 0.5283018867924528
+    }
+  },
+  "feature_count": 26,
+  "features": [
+    "log_return",
+    "high_low_ratio",
+    "close_open_ratio",
+    "volume_ma5",
+    "volume_ratio",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20"
+  ]
+}

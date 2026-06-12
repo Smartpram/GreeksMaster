@@ -601,15 +601,15 @@ class BreezeAPIService:
             if response.status_code == 200:
                 data = response.json()
                 if 'Success' in data and data['Success']:
-                    logger.info(f"✅ Successfully retrieved {len(data.get('Success', []))} bars for {stock_code} ({interval})")
+                    logger.info(f"[OK] Successfully retrieved {len(data.get('Success', []))} bars for {stock_code} ({interval})")
                     return {'success': True, 'data': data['Success']}
                 else:
                     error_msg = data.get('Error', 'No data returned')
-                    logger.warning(f"⚠️ Historical data response: {error_msg}")
+                    logger.warning(f"[WARNING] Historical data response: {error_msg}")
                     return {'success': False, 'data': [], 'warning': error_msg}
             else:
                 error_msg = f'HTTP {response.status_code}: {response.text[:300]}'
-                logger.warning(f"⚠️ Historical data endpoint error: {error_msg}")
+                logger.warning(f"[WARNING] Historical data endpoint error: {error_msg}")
                 return {'success': False, 'data': [], 'error': error_msg}
                 
         except Exception as e:

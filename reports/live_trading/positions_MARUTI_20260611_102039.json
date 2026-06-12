@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-06-11T10:20:39.196827",
+  "ticker": "MARUTI",
+  "total_trades": 1,
+  "closed_trades": 1,
+  "open_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "daily_pnl": -0.33135000000766013,
+  "trades": [
+    {
+      "timestamp": "2026-06-11 10:20:39.190859",
+      "action": "SELL",
+      "confidence": 0.6666666666666666,
+      "entry_price": 

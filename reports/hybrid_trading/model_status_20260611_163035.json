@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-11T16:30:35.952862",
+  "global": {
+    "version": 0,
+    "ready": false,
+    "training_samples": 0,
+    "accuracy": 0
+  },
+  "groups": {
+    "indices": {
+      "version": 0,
+      "ready": false,
+      "training_samples": 0,
+      "accuracy": 0
+    },
+    "stocks": {
+      "version": 0,
+      "ready": false,
+      "training_samples": 0,
+      "accuracy": 0
+    }
+  },
+  "tickers": {
+    "NIFTY": {
+      "version": 0,
+      "ready": false,
+      "training_samples": 0,
+      "accuracy": 0
+    },
+    "BANKNIFTY": {
+      "version": 0,
+      "ready": false,
+      "training_samples": 0,
+      "accuracy": 0
+    }
+  }
+}

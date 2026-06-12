@@ -1,0 +1,48 @@
+{
+  "with_range_policy": {
+    "total_trades": 186,
+    "winning_trades": 46,
+    "losing_trades": 140,
+    "win_rate": 0.24731182795698925,
+    "profit_factor": 0.9677787082771617,
+    "total_pnl": -209639.13310621868,
+    "max_drawdown": -0.5637891054695394,
+    "avg_win": 136882.4089761449,
+    "avg_loss": -46473.07104292061,
+    "sharpe_ratio": -0.1544180890531739,
+    "range_blocks": 0,
+    "trades_executed": 186,
+    "avg_position_size": 1.0
+  },
+  "without_range_policy": {
+    "total_trades": 186,
+    "winning_trades": 46,
+    "losing_trades": 140,
+    "win_rate": 0.24731182795698925,
+    "profit_factor": 0.9677787082771617,
+    "total_pnl": -209639.13310621868,
+    "max_drawdown": -0.5637891054695394,
+    "avg_win": 136882.4089761449,
+    "avg_loss": -46473.07104292061,
+    "sharpe_ratio": -0.1544180890531739,
+    "range_blocks": 0,
+    "trades_executed": 186,
+    "avg_position_size": 1.0
+  },
+  "summary": {
+    "period": "2024-01-01 to 2026-06-09",
+    "symbols": [
+      "INFY",
+      "TCS",
+      "AXIS",
+      "MARUTI",
+      "WIPRO",
+      "SUNPHARMA"
+    ],
+    "total_trades_baseline": 186,
+    "range_blocks": 0,
+    "trades_executed_with_rp": 186,
+    "pnl_improvement": 0.0,
+    "drawdown_improvement": 0.0
+  }
+}

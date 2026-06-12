@@ -1,0 +1,36 @@
+{
+  "metrics": {
+    "total_trades": 2,
+    "winning_trades": 1,
+    "losing_trades": 1,
+    "win_rate": 0.5,
+    "profit_factor": 1.4257244462727654,
+    "total_pnl": 33005.3421242827,
+    "max_drawdown": -0.03101099071312044,
+    "avg_win": 110532.81890708386,
+    "avg_loss": -77527.47678280115,
+    "sharpe_ratio": 2.7860403029926677,
+    "avg_bars_held": 2.5,
+    "avg_adx": 73.54874610757642,
+    "filtered_signals": 186,
+    "trades_executed": 2
+  },
+  "summary": {
+    "period": "2024-01-01 to 2026-06-09",
+    "symbols": [
+      "INFY",
+      "TCS",
+      "AXIS",
+      "MARUTI",
+      "WIPRO",
+      "SUNPHARMA"
+    ],
+    "filters": {
+      "min_adx": 25,
+      "min_volume_factor": 0.7,
+      "profit_target_pct": 0.02,
+      "stop_loss_pct": 0.01,
+      "max_bars_held": 10
+    }
+  }
+}

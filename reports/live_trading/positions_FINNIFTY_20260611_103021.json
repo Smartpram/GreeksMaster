@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-11T10:30:21.258746",
+  "ticker": "FINNIFTY",
+  "total_trades": 1,
+  "closed_trades": 1,
+  "open_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "daily_pnl": -82.95208947238606,
+  "trades": [
+    {
+      "timestamp": "2026-06-11 10:30:21.257842",
+      "action": "SELL",
+      "confidence": 0.6666666666666666,
+      "entry_price": 23731.51766762959,
+      "exit_price": 23731.52366762959,
+      "quantity": 0.4213805513854793,
+      "pnl": -82.95208947238606,
+      "pnl_percent": -0.8295208947238607,
+      "status": "CLOSED",
+      "exit_reason": "target"
+    }
+  ]
+}

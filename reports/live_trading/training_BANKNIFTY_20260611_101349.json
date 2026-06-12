@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-11T10:13:49.070699",
+  "ticker": "BANKNIFTY",
+  "models": {
+    "xgboost": {
+      "accuracy": 0.5845070422535211,
+      "precision": 0.6385542168674698,
+      "recall": 0.6463414634146342,
+      "f1": 0.6424242424242425
+    },
+    "rf": {
+      "accuracy": 0.4859154929577465,
+      "precision": 0.5652173913043478,
+      "recall": 0.47560975609756095,
+      "f1": 0.5165562913907285
+    },
+    "gb": {
+      "accuracy": 0.5352112676056338,
+      "precision": 0.6025641025641025,
+      "recall": 0.573170731707317,
+      "f1": 0.5875
+    }
+  },
+  "feature_count": 78,
+  "features": [
+    "log_return",
+    "high_low_ratio",
+    "close_open_ratio",
+    "volume_ma5",
+    "volume_ratio",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20"
+  ]
+}

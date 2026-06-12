@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-06-09T13:43:22.747528",
+  "signal_count": 2,
+  "signals": [
+    {
+      "signal_id": "AXIS_BREAKOUT_2026-06-09",
+      "timestamp": "2026-06-09T13:43:22.743041",
+      "symbol": "AXIS",
+      "signal_type": "BREAKOUT",
+      "direction": "BULLISH",
+      "confidence": 70,
+      "confidence_band": "HIGH",
+      "spot_price": 1292.4,
+      "spot_date": "2026-06-09",
+      "features": {
+        "sma20_diff_pct": 1.79,
+        "sma50_diff_pct": 0.0,
+        "atr": 24.54,
+        "atr_pct": 1.9,
+        "trend_pct_20d": 2.9,
+        "volume_ratio": 1.0,
+        "volatility": 0.2
+      },
+      "expected_move_pct": 1.9,
+      "holding_period_days": 5,
+      "volatility": 0.2,
+      "atr": 24.54,
+      "urgency": "INTRADAY",
+      "metadata": {
+        "symbol_canonical": "AXIS",
+        "exchange": "NSE",
+        "sector": "BANKING"
+      }
+    },
+    {
+      "signal_id": "INFY_MOMENTUM_2026-06-09",
+      "timestamp": "2026-06-09T13:43:22.744696",
+      "symbol": "INFY",
+      "signal_type": "MOMENTUM",
+      "direction": "BULLISH",
+      "confidence": 65,
+      "confidence_band": "MEDIUM",
+      "spot_price": 1180.3,
+      "spot_date": "2026-06-09",
+      "features": {
+        "sma20_diff_pct": 0.43,
+        "sma50_diff_pct": 0.0,
+        "atr": 31.69,
+        "atr_pct": 2.68,
+        "trend_pct_20d": 5.1,
+        "volume_ratio": 1.0,
+        "volatility": 0.33
+      },
+      "expected_move_pct": 2.68,
+      "holding_period_days": 4,
+      "volatility": 0.33,
+      "atr": 31.69,
+      "urgency": "SWING",
+      "metadata": {
+        "symbol_canonical": "INFY",
+        "exchange": "NSE",
+        "sector": "IT"
+      }
+    }
+  ]
+}

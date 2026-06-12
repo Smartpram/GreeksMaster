@@ -1,0 +1,82 @@
+{
+  "test_date": "2026-06-10T21:32:04.845738",
+  "symbol": "NIFTY50",
+  "total_cycles": 3,
+  "successful_cycles": 0,
+  "success_rate": 0.0,
+  "avg_cycle_time_ms": 107.65353838602702,
+  "data_fetch_success_rate": 1.0,
+  "feature_engine_success_rate": 1.0,
+  "prediction_engine_success_rate": 0.0,
+  "emergency_stop_active_count": 0,
+  "avg_bullish_score": 39.02396407101944,
+  "avg_prediction_confidence": null,
+  "cycle_results": [
+    {
+      "cycle_num": 1,
+      "timestamp": "2026-06-10T21:32:02.511480",
+      "symbol": "NIFTY50",
+      "data_fetched": true,
+      "num_candles": 100,
+      "latest_price": 20003.410455704197,
+      "features_computed": true,
+      "bullish_score": 42.04753785146214,
+      "feature_errors": [],
+      "prediction_available": false,
+      "predicted_direction": null,
+      "prediction_confidence": null,
+      "ml_errors": [
+        "Prediction Engine error: 'PredictionEngine' object has no attribute 'predict_direction'"
+      ],
+      "emergency_stop_active": false,
+      "emergency_stop_reason": null,
+      "cycle_successful": false,
+      "total_time_ms": 212.22186088562012,
+      "errors": []
+    },
+    {
+      "cycle_num": 2,
+      "timestamp": "2026-06-10T21:32:03.728045",
+      "symbol": "NIFTY50",
+      "data_fetched": true,
+      "num_candles": 100,
+      "latest_price": 19999.79161452624,
+      "features_computed": true,
+      "bullish_score": 45.01774627125888,
+      "feature_errors": [],
+      "prediction_available": false,
+      "predicted_direction": null,
+      "prediction_confidence": null,
+      "ml_errors": [
+        "Prediction Engine error: 'PredictionEngine' object has no attribute 'predict_direction'"
+      ],
+      "emergency_stop_active": false,
+      "emergency_stop_reason": null,
+      "cycle_successful": false,
+      "total_time_ms": 92.95845031738281,
+      "errors": []
+    },
+    {
+      "cycle_num": 3,
+      "timestamp": "2026-06-10T21:32:04.822099",
+      "symbol": "NIFTY50",
+      "data_fetched": true,
+      "num_candles": 100,
+      "latest_price": 20008.3402718008,
+      "features_computed": true,
+      "bullish_score": 30.006608090337327,
+      "feature_errors": [],
+      "prediction_available": false,
+      "predicted_direction": null,
+      "prediction_confidence": null,
+      "ml_errors": [
+        "Prediction Engine error: 'PredictionEngine' object has no attribute 'predict_direction'"
+      ],
+      "emergency_stop_active": false,
+      "emergency_stop_reason": null,
+      "cycle_successful": false,
+      "total_time_ms": 17.780303955078125,
+      "errors": []
+    }
+  ]
+}

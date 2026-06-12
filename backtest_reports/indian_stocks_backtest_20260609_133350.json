@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-06-09T13:33:44.658405",
+  "data_source": "yfinance (Real NSE Data)",
+  "test_date": "2026-06-09",
+  "symbols_tested": 6,
+  "period_days": 60,
+  "backtest_results": {
+    "INFY": {
+      "symbol": "INFY",
+      "analysis": {
+        "symbol": "INFY",
+        "yf_symbol": "INFY.NS",
+        "date": "2026-06-09",
+        "price": 1180.300048828125,
+        "sma_20": 1175.270001220703,
+        "sma_50": 1215.0819946289062,
+        "atr": 31.685712541852677,
+        "volatility": 0.3385118463131943,
+        "volume": 10983029,
+        "avg_volume": 14023690.75,
+        "volume_ratio": 0.7831767824743283,
+        "price_change_20d": 5.093052665444623,
+        "data_points": 60
+      },
+      "signals": [],
+      "signal_count": 0
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "analysis": {
+        "symbol": "TCS",
+        "yf_symbol": "TCS.NS",
+        "date": "2026-06-09",
+        "price": 2151.0,
+        "sma_20": 2262.96591796875,
+        "sma_50": 2369.823251953125,
+        "atr": 68.0985812856006,
+        "volatility": 0.33483302671149096,
+        "volume": 4147784,
+        "avg_volume": 4632743.866666666,
+        "volume_ratio": 0.8953190850553966,
+        "price_change_20d": -4.075787402539246,
+        "data_points": 60
+      },
+      "signals": [],
+      "signal_count": 0
+    },
+    "AXIS": {
+      "symbol": "AXIS",
+      "analysis": {
+        "symbol": "AXIS",
+        "yf_symbol": "AXISBANK.NS",
+        "date": "2026-06-09",
+        "price": 1292.4000244140625,
+        "sma_20": 1269.6700073242187,
+        "sma_50": 1285.65,
+        "atr": 24.53570556640625,
+        "volatility": 0.29657370148874823,
+        "volume": 7533477,
+        "avg_volume": 7401463.633333334,
+        "volume_ratio": 1.0178361163692178,
+        "price_change_20d": 2.92267855931167,
+        "data_points": 60
+      },
+      "signals": [
+        {
+          "symbol": "AXIS",
+          "date": "2026-06-09",
+          "signal_type": "BREAKOUT",
+          "price": 1292.4000244140625,
+          "sma_20": 1269.6700073242187,
+          "sma_50": 1285.65,
+          "atr": 24.53570556640625,
+          "volatility": 0.29657370148874823,
+          "volume": 7533477,
+          "confidence": 0.7017836116369218
+        },
+        {
+          "symbol": "AXIS",
+          "date": "2026-06-09",
+          "signal_type": "MOMENTUM",
+          "price": 1292.4000244140625,
+          "sma_20": 1269.6700073242187,
+          "sma_50": 1285.65,
+          "atr": 24.53570556640625,
+          "volatility": 0.29657370148874823,
+          "volume": 7533477,
+          "confidence": 0.5292267855931168
+        }
+      ],
+      "signal_count": 2
+    },
+    "MARUTI": {
+      "symbol": "MARUTI",
+      "analysis": {
+        "symbol": "MARUTI",
+        "yf_symbol": "MARUTI.NS",
+        "date": "2026-06-09",
+        "price": 13120.0,
+        "sma_20": 13088.1,
+        "sma_50": 13169.4,
+        "atr": 264.42857142857144,
+        "volatility": 0.2698720707131223,
+        "volume": 428307,
+        "avg_volume": 519995.26666666666,
+        "volume_ratio": 0.8236748052450221,
+        "price_change_20d": 0.12974128062275814,
+        "data_points": 60
+      },
+      "signals": [],
+      "signal_count": 0
+    },
+    "WIPRO": {
+      "symbol": "WIPRO",
+      "analysis": {
+        "symbol": "WIPRO",
+        "yf_symbol": "WIPRO.NS",
+        "date": "2026-06-09",
+        "price": 181.6699981689453,
+        "sma_20": 197.89300003051758,
+        "sma_50": 199.3411993408203,
+        "atr": 6.591427394321987,
+        "volatility": 0.308080866936924,
+        "volume": 28373347,
+        "avg_volume": 26785940.25,
+        "volume_ratio": 1.0592626853933194,
+        "price_change_20d": -3.2641133030882146,
+        "data_points": 60
+      },
+      "signals": [],
+      "signal_count": 0
+    },
+    "SUNPHARMA": {
+      "symbol": "SUNPHARMA",
+      "analysis": {
+        "symbol": "SUNPHARMA",
+        "yf_symbol": "SUNPHARMA.NS",
+        "date": "2026-06-09",
+        "price": 1779.0,
+        "sma_20": 1832.235009765625,
+        "sma_50": 1778.1919995117187,
+        "atr": 35.078578404017854,
+        "volatility": 0.25768791176132233,
+        "volume": 3756529,
+        "avg_volume": 3890698.533333333,
+        "volume_ratio": 0.965515309864323,
+        "price_change_20d": -2.5098667033430595,
+        "data_points": 60
+      },
+      "signals": [],
+      "signal_count": 0
+    }
+  },
+  "summary": {
+    "symbols_analyzed": 6,
+    "total_signals": 2,
+    "signal_breakdown": {
+      "BREAKOUT": 1,
+      "MOMENTUM": 1
+    },
+    "avg_signals_per_stock": 0.3333333333333333,
+    "data_quality": "HIGH"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-06-10T22:57:44.559306",
+  "ticker": "FINNIFTY",
+  "total_trades": 3,
+  "trades": [
+    {
+      "timestamp": "2026-06-10 22:57:37.000829",
+      "action": "SELL",
+      "confidence": 0.6666666666666666
+    },
+    {
+      "timestamp": "2026-06-10 22:57:41.481480",
+      "action": "SELL",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "2026-06-10 22:57:44.558772",
+      "action": "SELL",
+      "confidence": 1.0
+    }
+  ]
+}

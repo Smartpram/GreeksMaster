@@ -1,11 +1,13 @@
 """
 MyBreezeApp - Main Application Runner
+Features fee-aware paper trading and live trading with realistic P&L calculations
 """
 import os
 import sys
 import logging
 from app.main import create_app
 from app.config import Config
+from app.brokerage_fees import BrokerageFeeCalculator, BrokeragePlan
 
 # Setup logging
 logging.basicConfig(
@@ -26,6 +28,16 @@ def main():
         Config.validate_config()
         logger.info("Configuration validated successfully")
         
+        # Initialize fee calculator and show info
+        fee_calc = BrokerageFeeCalculator(plan=BrokeragePlan.IVALUE)
+        logger.info("\n📊 Fee Configuration:")
+        logger.info("-" * 60)
+        logger.info("✓ Fee-Aware Trading Enabled (ICICI Direct)")
+        logger.info("  Default Plan: IVALUE (₹299 one-time, ₹20/trade)")
+        logger.info("  All P&L calculations include realistic fees")
+        logger.info("  Features: Brokerage, Exchange, STT, GST, SEBI, Stamp Duty")
+        logger.info("-" * 60)
+        
         # Create Flask app
         app = create_app()
         
@@ -34,9 +46,10 @@ def main():
         host = os.environ.get('HOST', '0.0.0.0')
         debug = os.environ.get('DEBUG', 'False').lower() == 'true'
         
-        logger.info(f"Starting MyBreezeApp on {host}:{port}")
+        logger.info(f"\nStarting MyBreezeApp on {host}:{port}")
         logger.info(f"Debug mode: {debug}")
         logger.info(f"Paper trading: {Config.PAPER_TRADING}")
+        logger.info(f"Fee-aware P&L: ENABLED ✓")
         
         # Run the application
         app.run(

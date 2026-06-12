@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-06-09T13:12:54.369221",
+  "test_date": "2026-06-09",
+  "symbols_tested": 4,
+  "screeners": {
+    "iv_screener": {
+      "AAPL": {
+        "screener": "IV_HIGH",
+        "symbol": "AAPL",
+        "timestamp": "2026-06-09T13:12:59.593704",
+        "spot_price": 289.6400146484375,
+        "total_calls": 37,
+        "high_iv_threshold": 62.890996093750005,
+        "high_iv_count": 10,
+        "opportunities": [
+          {
+            "strike": 250.0,
+            "IV%": 121.875390625,
+            "bid": 36.65,
+            "ask": 40.15,
+            "lastPrice": 41.24
+          },
+          {
+            "strike": 255.0,
+            "IV%": 108.49655126953124,
+            "bid": 32.8,
+            "ask": 35.15,
+            "lastPrice": 36.08
+          },
+          {
+            "strike": 267.5,
+            "IV%": 74.90259472656251,
+            "bid": 20.45,
+            "ask": 22.65,
+            "lastPrice": 25.75
+          },
+          {
+            "strike": 270.0,
+            "IV%": 62.890996093750005,
+            "bid": 17.35,
+            "ask": 20.0,
+            "lastPrice": 23.12
+          },
+          {
+            "strike": 335.0,
+            "IV%": 65.62534375000001,
+            "bid": 0.0,
+            "ask": 0.01,
+            "lastPrice": 0.01
+          }
+        ]
+      },
+      "MSFT": {
+        "screener": "IV_HIGH",
+        "symbol": "MSFT",
+        "timestamp": "2026-06-09T13:13:00.041609",
+        "spot_price": 401.0425109863281,
+        "total_calls": 54,
+        "high_iv_threshold": 69.92217578125,
+        "high_iv_count": 14,
+        "opportunities": [
+          {
+            "strike": 367.5,
+            "IV%": 74.414318359375,
+            "bid": 30.9,
+            "ask": 34.05,
+            "lastPrice": 46.26
+          },
+          {
+            "strike": 370.0,
+            "IV%": 75.195560546875,
+            "bid": 28.8,
+            "ask": 31.75,
+            "lastPrice": 35.79
+          },
+          {
+            "strike": 467.5,
+            "IV%": 70.312796875,
+            "bid": 0.0,
+            "ask": 0.02,
+            "lastPrice": 0.01
+          },
+          {
+            "strike": 472.5,
+            "IV%": 94.726615234375,
+            "bid": 0.0,
+            "ask": 0.2,
+            "lastPrice": 0.07
+          },
+          {
+            "strike": 475.0,
+            "IV%": 85.1563984375,
+            "bid": 0.0,
+            "ask": 0.06,
+            "lastPrice": 0.01
+          }
+        ]
+      },
+      "GOOGL": {
+        "screener": "IV_HIGH",
+        "symbol": "GOOGL",
+        "timestamp": "2026-06-09T13:13:00.369811",
+        "spot_price": 361.7900085449219,
+        "total_calls": 51,
+        "high_iv_threshold": 93.75006249999998,
+        "high_iv_count": 13,
+        "opportunities": [
+          {
+            "strike": 405.0,
+            "IV%": 107.32468212890626,
+            "bid": 0.0,
+            "ask": 2.13,
+            "lastPrice": 0.82
+          },
+          {
+            "strike": 417.5,
+            "IV%": 128.27184301757814,
+            "bid": 0.0,
+            "ask": 2.12,
+            "lastPrice": 0.01
+          },
+          {
+            "strike": 420.0,
+            "IV%": 97.55861816406251,
+            "bid": 0.0,
+            "ask": 0.4,
+            "lastPrice": 0.24
+          },
+          {
+            "strike": 422.5,
+            "IV%": 136.328443359375,
+            "bid": 0.0,
+            "ask": 2.12,
+            "lastPrice": 0.09
+          },
+          {
+            "strike": 430.0,
+            "IV%": 147.99830688476564,
+            "bid": 0.0,
+            "ask": 2.12,
+            "lastPrice": 0.1
+          }
+        ]
+      },
+      "TSLA": {
+        "screener": "IV_HIGH",
+        "symbol": "TSLA",
+        "timestamp": "2026-06-09T13:13:00.728940",
+        "spot_price": 389.7699890136719,
+        "total_calls": 105,
+        "high_iv_threshold": 192.7734736328125,
+        "high_iv_count": 27,
+        "opportunities": [
+          {
+            "strike": 537.5,
+            "IV%": 192.7734736328125,
+            "bid": 0.0,
+            "ask": 0.55,
+            "lastPrice": 0.12
+          },
+          {
+            "strike": 540.0,
+            "IV%": 195.1172119140625,
+            "bid": 0.0,
+            "ask": 0.55,
+            "lastPrice": 0.14
+          },
+          {
+            "strike": 542.5,
+            "IV%": 198.4375078125,
+            "bid": 0.0,
+            "ask": 0.57,
+            "lastPrice": 0.18
+          },
+          {
+            "strike": 545.0,
+            "IV%": 199.4140654296875,
+            "bid": 0.0,
+            "ask": 0.54,
+            "lastPrice": 0.18
+          },
+          {
+            "strike": 550.0,
+            "IV%": 205.8598603515625,
+            "bid": 0.0,
+            "ask": 0.58,
+            "lastPrice": 0.11
+          }
+        ]
+      }
+    },
+    "theta_screener": {
+      "AAPL": {
+        "screener": "THETA_DECAY",
+        "symbol": "AAPL",
+        "dte": 0,
+        "dte_range": [
+          5,
+          30
+        ],
+        "status": "OUT_OF_RANGE",
+        "opportunities": 0
+      },
+      "MSFT": {
+        "screener": "THETA_DECAY",
+        "symbol": "MSFT",
+        "dte": 0,
+        "dte_range": [
+          5,
+          30
+        ],
+        "status": "OUT_OF_RANGE",
+        "opportunities": 0
+      },
+      "GOOGL": {
+        "screener": "THETA_DECAY",
+        "symbol": "GOOGL",
+        "dte": 0,
+        "dte_range": [
+          5,
+          30
+        ],
+        "status": "OUT_OF_RANGE",
+        "opportunities": 0
+      },
+      "TSLA": {
+        "screener": "THETA_DECAY",
+        "symbol": "TSLA",
+        "dte": 0,
+        "dte_range": [
+          5,
+          30
+        ],
+        "status": "OUT_OF_RANGE",
+        "opportunities": 0
+      }
+    }
+  },
+  "summary": {
+    "total_opportunities": 64,
+    "data_source": "yfinance (REAL)",
+    "validation": "LIVE_MARKET_DATA"
+  }
+}

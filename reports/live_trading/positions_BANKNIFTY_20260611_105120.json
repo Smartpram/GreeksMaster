@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-11T10:51:20.304814",
+  "ticker": "BANKNIFTY",
+  "total_trades": 1,
+  "closed_trades": 1,
+  "open_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "daily_pnl": -82.64957314868091,
+  "trades": [
+    {
+      "timestamp": "2026-06-11 10:51:20.301202",
+      "action": "SELL",
+      "confidence": 0.6666666666666666,
+      "entry_price": 23731.51766762959,
+      "exit_price": 23731.51516762959,
+      "quantity": 0.4213805513854793,
+      "pnl": -82.64957314868091,
+      "pnl_percent": -0.8264957314868091,
+      "status": "CLOSED",
+      "exit_reason": "stop_loss"
+    }
+  ]
+}

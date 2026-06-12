@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-11T10:51:12.926087",
+  "ticker": "NIFTY50",
+  "total_trades": 1,
+  "closed_trades": 1,
+  "open_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "daily_pnl": -83.55584955458293,
+  "trades": [
+    {
+      "timestamp": "2026-06-11 10:51:12.922552",
+      "action": "SELL",
+      "confidence": 0.6666666666666666,
+      "entry_price": 23731.51766762959,
+      "exit_price": 23731.52891762959,
+      "quantity": 0.4213805513854793,
+      "pnl": -83.55584955458293,
+      "pnl_percent": -0.8355584955458293,
+      "status": "CLOSED",
+      "exit_reason": "target"
+    }
+  ]
+}

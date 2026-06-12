@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-11T10:14:13.090842",
+  "ticker": "TCS",
+  "models": {
+    "xgboost": {
+      "accuracy": 0.7161016949152542,
+      "precision": 0.5,
+      "recall": 0.44776119402985076,
+      "f1": 0.47244094488188976
+    },
+    "rf": {
+      "accuracy": 0.711864406779661,
+      "precision": 0.48717948717948717,
+      "recall": 0.2835820895522388,
+      "f1": 0.3584905660377358
+    },
+    "gb": {
+      "accuracy": 0.7203389830508474,
+      "precision": 0.5128205128205128,
+      "recall": 0.29850746268656714,
+      "f1": 0.37735849056603776
+    }
+  },
+  "feature_count": 78,
+  "features": [
+    "log_return",
+    "high_low_ratio",
+    "close_open_ratio",
+    "volume_ma5",
+    "volume_ratio",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20"
+  ]
+}

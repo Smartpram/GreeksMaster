@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-11T10:25:33.905710",
+  "ticker": "MARUTI",
+  "total_trades": 1,
+  "closed_trades": 1,
+  "open_trades": 0,
+  "winning_trades": 1,
+  "losing_trades": 0,
+  "daily_pnl": 0.22089999997660925,
+  "trades": [
+    {
+      "timestamp": "2026-06-11 10:25:33.904189",
+      "action": "SELL",
+      "confidence": 0.6666666666666666,
+      "entry_price": "13098",
+      "exit_price": 13097.9953,
+      "quantity": 0.7634753397465261,
+      "pnl": 0.22089999997660925,
+      "pnl_percent": 0.0022089999997660925,
+      "status": "CLOSED",
+      "exit_reason": "stop_loss"
+    }
+  ]
+}

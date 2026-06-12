@@ -1,0 +1,177 @@
+{
+  "timestamp": "2026-06-09T13:32:47.569784",
+  "data_source": "yfinance (REAL Indian Stocks)",
+  "test_date": "2026-06-09",
+  "symbols_tested": 7,
+  "stocks": {
+    "INFY": {
+      "current": {
+        "symbol": "INFY",
+        "yfinance_symbol": "INFY.NS",
+        "date": "2026-06-09",
+        "open": 1193.5999755859375,
+        "high": 1193.5999755859375,
+        "low": 1167.300048828125,
+        "close": 1180.300048828125,
+        "volume": 10983029
+      },
+      "historical": {
+        "symbol": "INFY",
+        "days": 30,
+        "current_price": 1180.300048828125,
+        "sma_20": 1175.270001220703,
+        "sma_50": null,
+        "atr": 31.685712541852677,
+        "volatility": 0.33199343848553003,
+        "price_range": {
+          "high": 1278.9000244140625,
+          "low": 1089.0,
+          "change_pct": 1.0963639253211992
+        }
+      },
+      "screener_ready": true
+    },
+    "TCS": {
+      "current": {
+        "symbol": "TCS",
+        "yfinance_symbol": "TCS.NS",
+        "date": "2026-06-09",
+        "open": 2174.0,
+        "high": 2174.0,
+        "low": 2132.800048828125,
+        "close": 2151.0,
+        "volume": 4147784
+      },
+      "historical": {
+        "symbol": "TCS",
+        "days": 30,
+        "current_price": 2151.0,
+        "sma_20": 2262.96591796875,
+        "sma_50": null,
+        "atr": 68.0985812856006,
+        "volatility": 0.36898495443352763,
+        "price_range": {
+          "high": 2464.8785979918853,
+          "low": 2132.800048828125,
+          "change_pct": -11.90182355958591
+        }
+      },
+      "screener_ready": true
+    },
+    "AXIS": {
+      "current": {
+        "symbol": "AXIS",
+        "yfinance_symbol": "AXISBANK.NS",
+        "date": "2026-06-09",
+        "open": 1275.9000244140625,
+        "high": 1298.4000244140625,
+        "low": 1271.5,
+        "close": 1292.4000244140625,
+        "volume": 7533477
+      },
+      "historical": {
+        "symbol": "AXIS",
+        "days": 30,
+        "current_price": 1292.4000244140625,
+        "sma_20": 1269.6700073242187,
+        "sma_50": null,
+        "atr": 24.53570556640625,
+        "volatility": 0.20025449420979152,
+        "price_range": {
+          "high": 1317.0,
+          "low": 1222.0999755859375,
+          "change_pct": -0.3085467390212285
+        }
+      },
+      "screener_ready": true
+    },
+    "MARUTI": {
+      "current": {
+        "symbol": "MARUTI",
+        "yfinance_symbol": "MARUTI.NS",
+        "date": "2026-06-09",
+        "open": 13079.0,
+        "high": 13157.0,
+        "low": 12851.0,
+        "close": 13120.0,
+        "volume": 428307
+      },
+      "historical": {
+        "symbol": "MARUTI",
+        "days": 30,
+        "current_price": 13120.0,
+        "sma_20": 13088.1,
+        "sma_50": null,
+        "atr": 264.42857142857144,
+        "volatility": 0.17989404166061632,
+        "price_range": {
+          "high": 13976.0,
+          "low": 12700.0,
+          "change_pct": -1.033416308365392
+        }
+      },
+      "screener_ready": true
+    },
+    "WIPRO": {
+      "current": {
+        "symbol": "WIPRO",
+        "yfinance_symbol": "WIPRO.NS",
+        "date": "2026-06-09",
+        "open": 183.97000122070312,
+        "high": 184.35000610351562,
+        "low": 180.60000610351562,
+        "close": 181.6699981689453,
+        "volume": 28373347
+      },
+      "historical": {
+        "symbol": "WIPRO",
+        "days": 30,
+        "current_price": 181.6699981689453,
+        "sma_20": 197.89300003051758,
+        "sma_50": null,
+        "atr": 6.591427394321987,
+        "volatility": 0.3303427066556348,
+        "price_range": {
+          "high": 211.0,
+          "low": 180.60000610351562,
+          "change_pct": -9.472790113934526
+        }
+      },
+      "screener_ready": true
+    },
+    "SUNPHARMA": {
+      "current": {
+        "symbol": "SUNPHARMA",
+        "yfinance_symbol": "SUNPHARMA.NS",
+        "date": "2026-06-09",
+        "open": 1787.699951171875,
+        "high": 1796.5999755859375,
+        "low": 1766.0999755859375,
+        "close": 1779.0,
+        "volume": 3756529
+      },
+      "historical": {
+        "symbol": "SUNPHARMA",
+        "days": 30,
+        "current_price": 1779.0,
+        "sma_20": 1832.235009765625,
+        "sma_50": null,
+        "atr": 35.078578404017854,
+        "volatility": 0.17657231028926113,
+        "price_range": {
+          "high": 1916.5999755859375,
+          "low": 1750.0,
+          "change_pct": 0.016868996253545543
+        }
+      },
+      "screener_ready": true
+    }
+  },
+  "summary": {
+    "stocks_retrieved": 6,
+    "total_trading_volume": 55222473,
+    "avg_volatility": 0.26467365762239353,
+    "date_range": "Last 30 days",
+    "data_quality": "PARTIAL"
+  }
+}

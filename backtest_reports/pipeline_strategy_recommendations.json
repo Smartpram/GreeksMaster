@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-06-09T13:44:55.119106",
+  "recommendation_count": 2,
+  "recommendations": [
+    {
+      "strategy_id": "AXIS_BREAKOUT_20260609_134455",
+      "signal_id": "AXIS_BREAKOUT_2026-06-09",
+      "symbol": "AXIS",
+      "timestamp": "2026-06-09T13:44:55.102852",
+      "strategy_type": "BULL_CALL_SPREAD",
+      "direction": "BULLISH",
+      "rationale": "Bullish breakout with high confidence. Bull Call Spread provides defined risk AND defined profit with lower premium outlay. Excellent for capital preservation.",
+      "selection_reason": {
+        "signal_type": "BREAKOUT",
+        "confidence": 70,
+        "expected_move_pct": 1.9,
+        "why_spread": "Lower cost than naked call, defined risk, better for first automation",
+        "risk_profile": "Defined risk = max premium paid, defined profit = width - premium",
+        "capital_efficiency": "High - 40-60% return on capital at risk"
+      },
+      "legs": [
+        {
+          "position_type": "LONG_CALL",
+          "strike": null,
+          "strike_selection": "ATM",
+          "expiry_dte": 7,
+          "quantity": 1
+        },
+        {
+          "position_type": "SHORT_CALL",
+          "strike": null,
+          "strike_selection": "OTM",
+          "expiry_dte": 7,
+          "quantity": 1
+        }
+      ],
+      "expiry_horizon": "WEEKLY",
+      "max_risk_per_trade": 25.848000000000003,
+      "max_premium_outlay": 25.848000000000003,
+      "entry_condition": "MARKET_OPEN",
+      "holding_period_days": 5,
+      "profit_target_pct": 50.0,
+      "stop_loss_pct": 100.0,
+      "time_stop_days": 4,
+      "pre_trade_checks": null,
+      "confidence": 70,
+      "expected_return_pct": 0.95,
+      "metadata": {
+        "capital_efficiency": "High",
+        "spread_width": "1-2% of spot",
+        "break_even": "Long strike + net premium"
+      }
+    },
+    {
+      "strategy_id": "INFY_MOMENTUM_20260609_134455",
+      "signal_id": "INFY_MOMENTUM_2026-06-09",
+      "symbol": "INFY",
+      "timestamp": "2026-06-09T13:44:55.103093",
+      "strategy_type": "LONG_CALL",
+      "direction": "BULLISH",
+      "rationale": "Bullish directional signal with moderate-to-high confidence. Long Call provides unlimited upside with defined risk (premium paid).",
+      "selection_reason": {
+        "signal_type": "MOMENTUM",
+        "confidence": 65,
+        "expected_move_pct": 2.68,
+        "why_long_call": "Simplest directional play, good for learning engine behavior",
+        "risk_profile": "Defined risk (premium) with unlimited upside"
+      },
+      "legs": [
+        {
+          "position_type": "LONG_CALL",
+          "strike": null,
+          "strike_selection": "ATM",
+          "expiry_dte": 7,
+          "quantity": 1
+        }
+      ],
+      "expiry_horizon": "WEEKLY",
+      "max_risk_per_trade": 59.015,
+      "max_premium_outlay": 59.015,
+      "entry_condition": "MARKET_OPEN",
+      "holding_period_days": 4,
+      "profit_target_pct": 50.0,
+      "stop_loss_pct": 30.0,
+      "time_stop_days": 3,
+      "pre_trade_checks": null,
+      "confidence": 65,
+      "expected_return_pct": 2.68,
+      "metadata": {
+        "capital_efficiency": "Medium"
+      }
+    }
+  ]
+}

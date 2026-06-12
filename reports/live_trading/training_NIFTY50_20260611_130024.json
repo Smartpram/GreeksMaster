@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-11T13:00:24.334658",
+  "ticker": "NIFTY50",
+  "models": {
+    "xgboost": {
+      "accuracy": 0.6878612716763006,
+      "precision": 0.5675675675675675,
+      "recall": 0.5121951219512195,
+      "f1": 0.5384615384615384
+    },
+    "rf": {
+      "accuracy": 0.708092485549133,
+      "precision": 0.6,
+      "recall": 0.5365853658536586,
+      "f1": 0.5665236051502146
+    },
+    "gb": {
+      "accuracy": 0.6676300578034682,
+      "precision": 0.5333333333333333,
+      "recall": 0.5203252032520326,
+      "f1": 0.5267489711934157
+    }
+  },
+  "feature_count": 78,
+  "features": [
+    "log_return",
+    "high_low_ratio",
+    "close_open_ratio",
+    "volume_ma5",
+    "volume_ratio",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20"
+  ]
+}

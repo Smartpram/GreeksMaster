@@ -1,6 +1,7 @@
 """
 MyBreezeApp - Algorithmic Trading Application
 Main Flask Application Entry Point
+Features realistic fee-aware P&L calculations using ICICI Direct brokerage structure
 """
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from app.services.breeze_service_factory import get_breeze_service
@@ -12,17 +13,25 @@ from app.services.notifications import NotificationService
 from app.services.auth_service import AuthService
 from app.strategies.buy_hold_trend import BuyHoldTrendStrategy
 from app.config import Config
+from app.brokerage_fees import BrokerageFeeCalculator, BrokeragePlan
 import logging
 import os
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+logger.info("🚀 MyBreezeApp Starting with Fee-Aware Trading")
+logger.info("📊 All P&L calculations include realistic ICICI Direct fees")
 
 def create_app():
     """Application factory pattern"""
     app = Flask(__name__)
     app.config.from_object(Config)
+    
+    # Initialize fee calculator for realistic P&L
+    fee_calculator = BrokerageFeeCalculator(plan=BrokeragePlan.IVALUE)
+    app.fee_calculator = fee_calculator
+    logger.info("✓ Fee calculator initialized (IVALUE Plan)")
     
     # Initialize services (prefer breeze_connect adapter when available)
     breeze_service = get_breeze_service()

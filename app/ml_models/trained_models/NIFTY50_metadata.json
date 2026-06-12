@@ -1,0 +1,42 @@
+{
+  "symbol": "NIFTY50",
+  "training_date": "2026-06-10T21:53:34.199385",
+  "data_points": 17320,
+  "features": [
+    "sma_20",
+    "sma_50",
+    "sma_200",
+    "ema_12",
+    "ema_26",
+    "rsi",
+    "macd",
+    "macd_signal",
+    "atr",
+    "bb_width",
+    "volume_sma",
+    "volume_ratio",
+    "high_low_ratio",
+    "close_position"
+  ],
+  "models": [
+    "xgboost",
+    "random_forest",
+    "ensemble"
+  ],
+  "performance": {
+    "xgboost": {
+      "accuracy": 0.3340069284064665
+    },
+    "random_forest": {
+      "accuracy": 0.35161662817551964
+    },
+    "ensemble": {
+      "accuracy": 0.3397806004618938
+    }
+  },
+  "saved_files": {
+    "xgboost": "app\\ml_models\\trained_models\\NIFTY50_xgboost_model.joblib",
+    "random_forest": "app\\ml_models\\trained_models\\NIFTY50_random_forest_model.joblib",
+    "scaler": "app\\ml_models\\trained_models\\NIFTY50_scaler.joblib"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "NIFTY50": {
+    "symbol": "NIFTY50",
+    "backtest_date": "2026-06-10T22:02:20.871520",
+    "baseline": {
+      "total_pnl": -35.7687829293666,
+      "total_trades": 8740,
+      "profitable_trades": 4308,
+      "win_rate": 49.29061784897025,
+      "cumulative_return": -35.76878292936655
+    },
+    "ai_model": {
+      "total_pnl": -7.3043902721852705,
+      "total_trades": 3427,
+      "profitable_trades": 1699,
+      "win_rate": 49.57688940764517,
+      "cumulative_return": -7.304390272185279
+    },
+    "improvement": {
+      "win_rate": 0.28627155867491894,
+      "return": 28.46439265718127
+    },
+    "edge_validated": false
+  },
+  "BANKNIFTY": {
+    "symbol": "BANKNIFTY",
+    "backtest_date": "2026-06-10T22:02:26.227041",
+    "baseline": {
+      "total_pnl": -35.7687829293666,
+      "total_trades": 8740,
+      "profitable_trades": 4308,
+      "win_rate": 49.29061784897025,
+      "cumulative_return": -35.76878292936655
+    },
+    "ai_model": {
+      "total_pnl": -7.3043902721852705,
+      "total_trades": 3427,
+      "profitable_trades": 1699,
+      "win_rate": 49.57688940764517,
+      "cumulative_return": -7.304390272185279
+    },
+    "improvement": {
+      "win_rate": 0.28627155867491894,
+      "return": 28.46439265718127
+    },
+    "edge_validated": false
+  },
+  "FINNIFTY": {
+    "symbol": "FINNIFTY",
+    "backtest_date": "2026-06-10T22:02:31.288055",
+    "baseline": {
+      "total_pnl": -35.7687829293666,
+      "total_trades": 8740,
+      "profitable_trades": 4308,
+      "win_rate": 49.29061784897025,
+      "cumulative_return": -35.76878292936655
+    },
+    "ai_model": {
+      "total_pnl": -7.3043902721852705,
+      "total_trades": 3427,
+      "profitable_trades": 1699,
+      "win_rate": 49.57688940764517,
+      "cumulative_return": -7.304390272185279
+    },
+    "improvement": {
+      "win_rate": 0.28627155867491894,
+      "return": 28.46439265718127
+    },
+    "edge_validated": false
+  }
+}

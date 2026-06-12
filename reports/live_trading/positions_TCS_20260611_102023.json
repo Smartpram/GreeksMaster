@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-11T10:20:23.293761",
+  "ticker": "TCS",
+  "total_trades": 1,
+  "closed_trades": 1,
+  "open_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "daily_pnl": -0.33135000000766013,
+  "trades": [
+    {
+      "timestamp": "2026-06-11 10:20:23.288633",
+      "action": "SELL",
+      "confidence": 1.0,
+      "entry_price": 2135.6,
+      "exit_price": 2135.60705,
+      "quantity": 4.682524817381532,
+      "pnl": -0.33135000000766013,
+      "pnl_percent": -0.003313500000076601,
+      "status": "CLOSED",
+      "exit_reason": "target"
+    }
+  ]
+}

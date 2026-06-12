@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-06-10T22:57:37.001293",
+  "ticker": "NIFTY50",
+  "total_trades": 1,
+  "trades": [
+    {
+      "timestamp": "2026-06-10 22:57:37.000829",
+      "action": "SELL",
+      "confidence": 0.6666666666666666
+    }
+  ]
+}

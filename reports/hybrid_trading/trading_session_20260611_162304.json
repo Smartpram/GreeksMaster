@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-06-11T16:23:04.933034",
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0,
+  "total_pnl": 0.0,
+  "average_pnl_per_trade": 0,
+  "ml_model_status": {
+    "timestamp": "2026-06-11T16:23:04.933054",
+    "global": {
+      "version": 0,
+      "ready": false,
+      "training_samples": 0,
+      "accuracy": 0
+    },
+    "groups": {
+      "indices": {
+        "version": 0,
+        "ready": false,
+        "training_samples": 0,
+        "accuracy": 0
+      },
+      "stocks": {
+        "version": 0,
+        "ready": false,
+        "training_samples": 0,
+        "accuracy": 0
+      }
+    },
+    "tickers": {
+      "NIFTY": {
+        "version": 0,
+        "ready": false,
+        "training_samples": 0,
+        "accuracy": 0
+      },
+      "BANKNIFTY": {
+        "version": 0,
+        "ready": false,
+        "training_samples": 0,
+        "accuracy": 0
+      }
+    }
+  }
+}
