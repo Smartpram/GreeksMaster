@@ -6,9 +6,21 @@ import requests
 import json
 import logging
 import hashlib
+import sys
+import os
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional, Union
-from app.config import Config
+
+# Ensure scripts directory is in path
+scripts_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'scripts')
+scripts_dir = os.path.abspath(scripts_dir)
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+try:
+    from config import Config
+except ImportError:
+    from app.config import Config
 
 logger = logging.getLogger(__name__)
 

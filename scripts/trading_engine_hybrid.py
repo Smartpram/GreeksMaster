@@ -5,11 +5,18 @@ Status: Production ready
 """
 
 import os
+import sys
 import json
 import numpy as np
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple, Optional
-from app.ml_model_manager_hybrid import HybridMLModelManager
+
+# Add scripts directory to path for local imports
+scripts_dir = os.path.dirname(os.path.abspath(__file__))
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+from ml_model_manager_hybrid import HybridMLModelManager
 
 
 class HybridMLTradingEngine:

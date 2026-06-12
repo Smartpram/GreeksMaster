@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-06-12T12:40:48.134075",
+  "open_positions": {
+    "timestamp": "2026-06-12T12:40:48.134124",
+    "total_open": 0,
+    "positions": [],
+    "total_open_pnl": 0
+  },
+  "closed_positions": [],
+  "total_positions": 0,
+  "total_closed": 0,
+  "risk_parameters": {
+    "hard_stop_loss": -1.5,
+    "profit_target": 0.8,
+    "trailing_stop": 0.4,
+    "monitor_interval_seconds": 60
+  }
+}

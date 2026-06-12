@@ -20,18 +20,23 @@ if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
+# Add scripts directory to Python path for module imports
+scripts_dir = os.path.dirname(os.path.abspath(__file__))
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
 # Import main trading components
-from app.trading_engine_hybrid import HybridMLTradingEngine
-from app.position_monitor_realtime import RealTimePositionMonitor
+from trading_engine_hybrid import HybridMLTradingEngine
+from position_monitor_realtime import RealTimePositionMonitor
 
 # Import OPTIONS TRADING components (5 Phases)
-from app.options_chain_manager import OptionsChainManager
-from app.options_strategy_selector import OptionsStrategySelector
-from app.options_executor_and_risk import (
+from options_chain_manager import OptionsChainManager
+from options_strategy_selector import OptionsStrategySelector
+from options_executor_and_risk import (
     OptionsOrderExecutor, OptionsExitManager, OptionsRiskManager
 )
-from app.options_orchestrator import OptionsTradeOrchestrator, TradingSignal
-from app.options_testing import OptionsSystemTester
+from options_orchestrator import OptionsTradeOrchestrator, TradingSignal
+from options_testing import OptionsSystemTester
 
 
 class OptionsProductionScheduler:
@@ -572,8 +577,8 @@ class OptionsProductionScheduler:
 def main():
     """Main entry point"""
     from app.services.breeze_api import BreezeAPIService
-    from app.brokerage_fees import BrokerageFeeCalculator
-    from app.ticker_grouping_config import TickerGroupingConfig
+    from brokerage_fees import BrokerageFeeCalculator
+    from ticker_grouping_config import TickerGroupingConfig
     
     # Initialize components
     breeze = BreezeAPIService()
