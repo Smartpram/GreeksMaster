@@ -2,24 +2,74 @@ version: '3.8'
 
 services:
   mybreeze-app:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
     ports:
       - "5000:5000"
-    volumes:
-      - ./logs:/app/logs
-      - ./data:/app/data
-      - ./backups:/app/backups
-      - ./reports:/app/reports
     environment:
       - FLASK_ENV=production
-      - PAPER_TRADING=True
+      - DEBUG=False
     env_file:
-      - .env
+      - ../.env
+    volumes:
+      - ../data:/app/data
+      - ../logs:/app/logs
+    networks:
+      - mybreeze-network
     restart: unless-stopped
-    
-  # Optional: Add Redis for caching (uncomment if needed)
-  # redis:
-  #   image: redis:7-alpine
-  #   ports:
-  #     - "6379:6379"
-  #   restart: unless-stopped
+    depends_on:
+      - redis
+      - postgres
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - mybreeze-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: mybreeze
+      POSTGRES_USER: mybreeze
+      POSTGRES_PASSWORD: mybreeze_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mybreeze-network
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ../ssl:/etc/nginx/ssl:ro
+    networks:
+      - mybreeze-network
+    restart: unless-stopped
+    depends_on:
+      - mybreeze-app
+
+volumes:
+  redis_data:
+  postgres_data:
+
+networks:
+  mybreeze-network:
+    driver: bridge

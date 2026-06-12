@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-01-28T00:00:00Z",
+  "redacted": true,
+  "reserved_ip_local": "192.168.18.50",
+  "reserved_ip_note": "This is a private LAN IP. For vendor whitelisting you will need to provide the public IP or the NAT mapping/CIDR that represents your outbound address.",
+  "notes": "Bundle prepared by MyBreezeApp for Breeze/ICICI support. Sensitive session tokens have been redacted.",
+  "sdk_info": {
+    "package": "breeze_connect",
+    "version": "1.0.19",
+    "module_path": "C:\\Users\\<redacted>\\AppData\\Roaming\\Python\\Python313\\site-packages\\breeze_connect\\__init__.py",
+    "class": "BreezeConnect",
+    "relevant_methods": [
+      "get_portfolio_holdings(exchange_code, from_date, to_date, stock_code, portfolio_type)",
+      "get_portfolio_positions()",
+      "get_demat_holdings()",
+      "get_funds()",
+      "get_quotes(...)",
+      "subscribe_feeds(...)",
+      "unsubscribe_feeds(...)",
+      "generate_session(api_secret, session_token)"
+    ]
+  },
+  "sdk_calls": [
+    {
+      "call": "get_portfolio_holdings",
+      "params": {"exchange_code": "NFO", "from_date": "2024-08-01T06:00:00.000Z", "to_date": "2024-09-19T06:00:00.000Z"},
+      "response": {"Success": null, "Status": 500, "Error": "No record to be shown in this view"}
+    },
+    {
+      "call": "get_portfolio_holdings",
+      "params": {"exchange_code": "NSE", "from_date": "2024-08-01T06:00:00.000Z", "to_date": "2024-09-19T06:00:00.000Z"},
+      "response": {"Success": null, "Status": 500, "Error": "Portfolio not defined:You have not created a portfolio"}
+    },
+    {
+      "call": "get_portfolio_holdings",
+      "params": {"exchange_code": "NFO", "from_date": "2025-09-01T06:00:00.000Z", "to_date": "2025-12-31T06:00:00.000Z"},
+      "response": {"Success": null, "Status": 500, "Error": "No record to be shown in this view"}
+    },
+    {
+      "call": "get_portfolio_positions",
+      "params": {},
+      "response": {"Success": null, "Status": 200, "Error": "No Positions available."}
+    }
+  ],
+  "direct_http_calls": [
+    {
+      "call": "BreezeAPIService.get_portfolio_holdings",
+      "params": {"exchange_code": "NFO", "from_date": "2024-08-01T06:00:00.000Z", "to_date": "2024-09-19T06:00:00.000Z"},
+      "response": {"success": true, "data": null}
+    },
+    {
+      "call": "BreezeAPIService.get_portfolio_holdings",
+      "params": {"exchange_code": "NSE", "from_date": "2024-08-01T06:00:00.000Z", "to_date": "2024-09-19T06:00:00.000Z"},
+      "response": {"success": true, "data": null}
+    },
+    {
+      "call": "BreezeAPIService.get_portfolio_positions",
+      "params": {},
+      "response": {"success": false, "error": "HTTP 401: {\"Status\":500,\"Error\":\"Object reference not set to an instance of an object.\"}"}
+    }
+  ],
+  "account_scoped_probe": {
+    "accounts_tested": [
+      {"ucc": "8501299414", "demat": "IN302679-34609925"},
+      {"ucc": "7500094474", "demat": "IN303028-14053644"}
+    ],
+    "candidate_keys_tried": ["ucc","demat","customer_id","customerId","custid","client_id"],
+    "exchanges": ["NFO","NSE"],
+    "date_ranges_tried": ["2025-09-01 to 2025-12-31 (ISO)", "2025-09-01 to 2025-12-31 (yyyy-MM-dd)", "2025-11-15 single day"],
+    "total_attempts": 144,
+    "successful_hits": 0,
+    "notes": [
+      "Initial attempts that passed account keys as Python kwargs to BreezeAPIService failed with 'unexpected keyword argument' (we switched to direct HTTP POST).",
+      "Direct HTTP POSTs including account keys also returned empty results (data:null) or vendor messages indicating no portfolio or empty view.",
+      "All attempts recorded in debug logs (see debug events)."
+    ]
+  },
+  "debug_events_note": "All probe request/response events were recorded using the app's debug_store; you can view them via GET /api/debug/fallbacks on the running app (session-local).",
+  "sample_requests": [
+    {
+      "curl": "curl -X POST 'https://<your-host>/api/gtt/ingest' -H 'Content-Type: application/json' -H 'X-API-KEY: <REDACTED>' -d @sample.json",
+      "explanation": "Use this pattern to POST the full vendor payload to our ingest endpoint for storage." 
+    },
+    {
+      "curl_portfolio": "curl -X POST 'https://api.icicidirect.com/breezeapi/api/v1/portfolioholdings' -H 'Content-Type: application/json' -H 'X-AppKey: <REDACTED>' -H 'X-SessionToken: <REDACTED>' -d '{\"exchange_code\":\"NFO\",\"from_date\":\"2025-09-01T06:00:00.000Z\",\"to_date\":\"2025-12-31T06:00:00.000Z\",\"ucc\":\"8501299414\"}'",
+      "explanation": "Example direct HTTP request we used (session tokens redacted)."
+    }
+  ]
+}
