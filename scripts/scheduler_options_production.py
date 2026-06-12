@@ -38,6 +38,9 @@ from options_executor_and_risk import (
 from options_orchestrator import OptionsTradeOrchestrator, TradingSignal
 from options_testing import OptionsSystemTester
 
+# Import ntfy notification service
+from ntfy_notification_service import get_notification_service
+
 
 class OptionsProductionScheduler:
     """
@@ -91,6 +94,9 @@ class OptionsProductionScheduler:
         
         # IST timezone (UTC+5:30)
         self.ist_tz = pytz.timezone('Asia/Kolkata')
+        
+        # ntfy notification service for alerts
+        self.ntfy = get_notification_service(topic="mport")
         
         # ========== EQUITY TRADING COMPONENTS ==========
         self.engine = HybridMLTradingEngine(
@@ -463,6 +469,15 @@ class OptionsProductionScheduler:
         self._log("Timezone: IST (Asia/Kolkata / UTC+5:30) - Managed internally", level="INFO")
         self._log("="*80, level="SUCCESS")
         
+        # Send session started alert
+        try:
+            self.ntfy.session_started(
+                capital=self.capital,
+                max_loss=5000
+            )
+        except Exception as e:
+            self._log(f"ntfy alert error: {e}", level="DEBUG")
+        
         if self.options_enabled:
             self._log("OPTIONS TRADING: ENABLED", level="SUCCESS")
             self._log("  ✓ Phase 1: Options Chain Manager", level="DEBUG")
@@ -517,6 +532,10 @@ class OptionsProductionScheduler:
         self._log(f"Duration: {elapsed:.1f} minutes", level="INFO")
         self._log(f"Executions: {self.executions_completed}/{len(self.execution_times)}", level="INFO")
         
+        # Calculate totals for end-of-day summary
+        total_trades = self.total_trades + self.options_trades
+        total_pnl = self.session_pnl + self.options_pnl
+        
         # Equity summary
         self._log("-" * 80, level="DEBUG")
         self._log("EQUITY TRADING SUMMARY", level="DEBUG")
@@ -528,17 +547,24 @@ class OptionsProductionScheduler:
         closed_pos = self.position_monitor.get_closed_positions()
         
         self._log(f"Open positions: {open_pos['total_open']}", level="DEBUG")
+        
+        equity_wins = 0
+        equity_losses = 0
+        equity_total_pnl = 0
+        equity_win_rate = 0
+        
         if closed_pos:
-            wins = sum(1 for p in closed_pos if p['pnl'] > 0)
-            losses = sum(1 for p in closed_pos if p['pnl'] <= 0)
-            total_pnl = sum(p['pnl'] for p in closed_pos)
-            win_rate = (wins / len(closed_pos) * 100) if closed_pos else 0
+            equity_wins = sum(1 for p in closed_pos if p['pnl'] > 0)
+            equity_losses = sum(1 for p in closed_pos if p['pnl'] <= 0)
+            equity_total_pnl = sum(p['pnl'] for p in closed_pos)
+            equity_win_rate = (equity_wins / len(closed_pos) * 100) if closed_pos else 0
             
             self._log(f"Closed positions: {len(closed_pos)}", level="DEBUG")
-            self._log(f"  Winning: {wins} | Losing: {losses} | Win rate: {win_rate:.1f}%", level="DEBUG")
-            self._log(f"  Total P&L: Rs {total_pnl:,.2f}", level="DEBUG")
+            self._log(f"  Winning: {equity_wins} | Losing: {equity_losses} | Win rate: {equity_win_rate:.1f}%", level="DEBUG")
+            self._log(f"  Total P&L: Rs {equity_total_pnl:,.2f}", level="DEBUG")
         
         # Options summary
+        options_win_rate = 0
         if self.options_enabled:
             self._log("-" * 80, level="DEBUG")
             self._log("OPTIONS TRADING SUMMARY", level="DEBUG")
@@ -548,16 +574,50 @@ class OptionsProductionScheduler:
             try:
                 options_summary = self.options_orchestrator.generate_session_summary()
                 if options_summary:
-                    self._log(f"Win rate: {options_summary.get('win_rate_percent', 0):.1f}%", level="DEBUG")
+                    options_win_rate = options_summary.get('win_rate_percent', 0)
+                    self._log(f"Win rate: {options_win_rate:.1f}%", level="DEBUG")
                     self._log(f"Greeks exposure - Delta: {options_summary.get('portfolio_delta', 0):.2f}, Theta: {options_summary.get('portfolio_theta', 0):.2f}", level="DEBUG")
             except Exception as e:
                 self._log(f"Could not generate options summary: {e}", level="WARNING")
         
+        # Calculate fees (estimate: ~0.05% per trade)
+        estimated_fees = total_trades * 40  # ~Rs 40 per round trip (entry + exit)
+        net_pnl = total_pnl - estimated_fees
+        
+        # Overall win rate
+        total_wins = equity_wins  # Could add options wins too
+        overall_win_rate = (total_wins / total_trades * 100) if total_trades > 0 else 0
+        
         # Grand total
         self._log("-" * 80, level="SUCCESS")
-        grand_total = self.session_pnl + self.options_pnl
-        self._log(f"TOTAL P&L (Equity + Options): Rs {grand_total:,.2f}", level="SUCCESS")
+        self._log(f"TOTAL TRADES (Equity + Options): {total_trades}", level="SUCCESS")
+        self._log(f"OVERALL WIN RATE: {overall_win_rate:.1f}%", level="SUCCESS")
+        self._log(f"GROSS P&L (Equity + Options): Rs {total_pnl:,.2f}", level="SUCCESS")
+        self._log(f"ESTIMATED FEES: Rs {estimated_fees:,.2f}", level="INFO")
+        self._log(f"TOTAL P&L (Equity + Options): Rs {net_pnl:,.2f}", level="SUCCESS")
         self._log("="*80, level="SUCCESS")
+        
+        # Send end-of-day summary alert
+        try:
+            self.ntfy.session_ended(
+                trades=total_trades,
+                win_rate=overall_win_rate / 100.0,  # Convert to decimal
+                pnl=total_pnl,
+                fees=estimated_fees
+            )
+            
+            # Also send detailed daily summary
+            self.ntfy.daily_summary(
+                trades=total_trades,
+                win_rate=overall_win_rate / 100.0,
+                pnl=net_pnl,
+                best_trade=max([p.get('pnl', 0) for p in closed_pos], default=0) if closed_pos else 0,
+                worst_trade=min([p.get('pnl', 0) for p in closed_pos], default=0) if closed_pos else 0
+            )
+            
+            self._log("End-of-day summary sent via ntfy alerts", level="DEBUG")
+        except Exception as e:
+            self._log(f"ntfy alert error: {e}", level="DEBUG")
     
     def _save_final_reports(self):
         """Save all final reports"""
@@ -576,6 +636,12 @@ class OptionsProductionScheduler:
 
 def main():
     """Main entry point"""
+    # Ensure app package can be imported
+    import sys
+    app_path = os.path.join(os.path.dirname(__file__), '..')
+    if app_path not in sys.path:
+        sys.path.insert(0, app_path)
+    
     from app.services.breeze_api import BreezeAPIService
     from brokerage_fees import BrokerageFeeCalculator
     from ticker_grouping_config import TickerGroupingConfig
